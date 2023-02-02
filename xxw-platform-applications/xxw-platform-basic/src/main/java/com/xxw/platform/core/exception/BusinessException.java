@@ -1,8 +1,8 @@
-package com.xxw.platform.frame.web.core.exception;
+package com.xxw.platform.core.exception;
 
+import com.xxw.platform.core.consts.ProjectConstants;
 import com.xxw.platform.frame.common.exception.AbstractExceptionEnum;
 import com.xxw.platform.frame.common.exception.base.ServiceException;
-import com.xxw.platform.frame.web.core.consts.ProjectConstants;
 
 /**
  * 业务异常

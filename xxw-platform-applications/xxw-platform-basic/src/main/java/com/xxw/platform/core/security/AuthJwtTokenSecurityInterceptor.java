@@ -1,0 +1,51 @@
+package com.xxw.platform.core.security;
+
+import cn.hutool.core.util.StrUtil;
+import com.xxw.platform.core.security.base.BaseSecurityInterceptor;
+import com.xxw.platform.plugin.auth.api.AuthServiceApi;
+import com.xxw.platform.plugin.auth.api.exception.AuthException;
+import com.xxw.platform.plugin.auth.api.exception.enums.AuthExceptionEnum;
+import com.xxw.platform.plugin.scanner.api.pojo.resource.ResourceDefinition;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * 鉴权的过滤器，用来鉴权token
+ *
+ * @author fengshuonan
+ * @since 2020/12/15 22:45
+ */
+@Component
+@Slf4j
+public class AuthJwtTokenSecurityInterceptor extends BaseSecurityInterceptor {
+
+    /**
+     * 登陆服务Api
+     */
+    @Resource
+    private AuthServiceApi authServiceApi;
+
+    @Override
+    public void filterAction(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, ResourceDefinition resourceDefinition, String token) {
+
+        // 1. 获取当前请求的路径
+        String requestURI = httpServletRequest.getRequestURI();
+
+        // 2. 如果需要登录
+        if (resourceDefinition.getRequiredLoginFlag()) {
+
+            // token为空，返回用户校验失败
+            if (StrUtil.isEmpty(token)) {
+                throw new AuthException(AuthExceptionEnum.TOKEN_GET_ERROR);
+            }
+
+            // 3.校验token和用户会话信息是否正确
+            authServiceApi.checkAuth(token, requestURI);
+        }
+    }
+
+}

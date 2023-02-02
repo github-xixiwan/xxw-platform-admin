@@ -1,4 +1,6 @@
-package com.xxw.platform.frame.web.core.consts;
+package com.xxw.platform.core.consts;
+
+import com.xxw.platform.BasicApplication;
 
 /**
  * 项目的常量
@@ -17,5 +19,10 @@ public interface ProjectConstants {
      * 异常枚举的步进值
      */
     String BUSINESS_EXCEPTION_STEP_CODE = "100";
+
+    /**
+     * 项目的包名，例如cn.stylefeng.guns
+     */
+    String ROOT_PACKAGE_NAME = BasicApplication.class.getPackage().getName();
 
 }

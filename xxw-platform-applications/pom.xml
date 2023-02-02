@@ -14,7 +14,6 @@
     </parent>
 
     <modules>
-<!--        <module>xxw-platform-gateway</module>-->
-<!--        <module>xxw-platform-service</module>-->
+        <module>xxw-platform-basic</module>
     </modules>
 </project>

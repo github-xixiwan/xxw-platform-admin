@@ -114,7 +114,7 @@ public class SessionCenter {
      * 删除维护关系
      *
      * @param sessionId 会话ID
-     * @return {@link import com.xxw.platform.plugin.socket.api.session.pojo.SocketSession< SocketOperator>}
+     * @return {@link import com.xxw.platform.plugin.socket.api.session.pojo.SocketSession<SocketOperator>}
      * @author majianguo
      * @date 2021/8/30 9:20
      **/

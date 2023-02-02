@@ -49,7 +49,7 @@ public class MigrationController {
     /**
      * 备份指定数据列表
      *
-     * @return {@link import com.xxw.platform.plugin.rule.pojo.response.ResponseData}
+     * @return {@link import com.xxw.platform.frame.common.pojo.response.ResponseData}
      * @author majianguo
      * @date 2021/7/7 11:11
      **/

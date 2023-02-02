@@ -42,7 +42,7 @@ public class EncryptAlgorithmAutoConfiguration {
     /**
      * 数据库加密算法
      *
-     * @return {@link import com.xxw.platform.plugin.security.database.algorithm.EncryptAlgorithmApi}
+     * @return {@link import com.xxw.platform.plugin.security.sdk.df.algorithm..EncryptAlgorithmApi}
      * @author majianguo
      * @date 2021/7/5 10:16
      **/
