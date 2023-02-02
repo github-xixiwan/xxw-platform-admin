@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxw.platform.plugin.wrapper.starter.DateConvertAutoConfiguration,\
+com.xxw.platform.plugin.wrapper.starter.WrapperAutoConfiguration

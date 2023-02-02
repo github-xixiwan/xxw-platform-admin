@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>xxw-platform-plugin-development</artifactId>
+    <name>xxw-platform-plugin-development</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.xxw.platform</groupId>
+        <artifactId>xxw-platform-plugins</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modules>
+        <module>xxw-platform-plugin-db</module>
+        <module>xxw-platform-plugin-validator</module>
+        <module>xxw-platform-plugin-scanner</module>
+        <module>xxw-platform-plugin-wrapper</module>
+        <module>xxw-platform-plugin-jwt</module>
+        <module>xxw-platform-plugin-socket</module>
+        <module>xxw-platform-plugin-ds</module>
+        <module>xxw-platform-plugin-timer</module>
+        <module>xxw-platform-plugin-cache</module>
+        <module>xxw-platform-plugin-security</module>
+        <module>xxw-platform-plugin-log</module>
+        <module>xxw-platform-plugin-config</module>
+        <module>xxw-platform-plugin-file</module>
+        <module>xxw-platform-plugin-pinyin</module>
+        <module>xxw-platform-plugin-i18n</module>
+        <module>xxw-platform-plugin-office</module>
+        <module>xxw-platform-plugin-auth</module>
+    </modules>
+</project>

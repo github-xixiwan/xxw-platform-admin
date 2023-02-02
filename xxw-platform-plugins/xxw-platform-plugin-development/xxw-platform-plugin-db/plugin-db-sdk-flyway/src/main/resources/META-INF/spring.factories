@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationListener=\
+com.xxw.platform.plugin.db.flyway.FlywayInitListener

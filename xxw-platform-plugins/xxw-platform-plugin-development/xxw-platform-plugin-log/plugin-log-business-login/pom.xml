@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>plugin-log-business-login</artifactId>
+    <name>plugin-log-business-login</name>
+
+    <parent>
+        <groupId>com.xxw.platform</groupId>
+        <artifactId>xxw-platform-plugin-log</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-log-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-scanner-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-validator-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-system-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-wrapper-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-db-sdk-mp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

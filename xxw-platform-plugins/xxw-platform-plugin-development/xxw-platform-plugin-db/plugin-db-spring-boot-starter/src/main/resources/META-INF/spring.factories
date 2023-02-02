@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxw.platform.plugin.db.starter.DataSourceAutoConfiguration,\
+com.xxw.platform.plugin.db.starter.DruidMonitorAutoConfiguration,\
+com.xxw.platform.plugin.db.starter.DruidPropertiesAutoConfiguration,\
+com.xxw.platform.plugin.db.starter.MyBatisPlusAutoConfiguration,\
+com.xxw.platform.plugin.db.starter.RemoveDruidAdAutoConfiguration

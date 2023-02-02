@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>xxw-platform-plugin-log</artifactId>
+    <name>xxw-platform-plugin-log</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.xxw.platform</groupId>
+        <artifactId>xxw-platform-plugin-development</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modules>
+        <module>plugin-log-api</module>
+        <module>plugin-log-sdk-db</module>
+        <module>plugin-log-sdk-file</module>
+        <module>plugin-log-business-login</module>
+        <module>plugin-log-business-manage</module>
+        <module>plugin-log-business-request</module>
+        <module>plugin-log-spring-boot-starter</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>xxw-platform-frame-common</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

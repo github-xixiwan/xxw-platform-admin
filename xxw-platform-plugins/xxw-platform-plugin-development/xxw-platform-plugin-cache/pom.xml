@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>xxw-platform-plugin-cache</artifactId>
+    <name>xxw-platform-plugin-cache</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.xxw.platform</groupId>
+        <artifactId>xxw-platform-plugin-development</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modules>
+        <module>plugin-cache-api</module>
+        <module>plugin-cache-sdk-memory</module>
+        <module>plugin-cache-sdk-redis</module>
+        <module>plugin-cache-memory-spring-boot-starter</module>
+        <module>plugin-cache-redis-spring-boot-starter</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>xxw-platform-frame-common</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

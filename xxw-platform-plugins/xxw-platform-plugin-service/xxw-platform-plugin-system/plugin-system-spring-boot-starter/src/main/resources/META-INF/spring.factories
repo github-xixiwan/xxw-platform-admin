@@ -1,0 +1,10 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxw.platform.plugin.config.starter.SystemHomeStatisticsAutoConfiguration,\
+com.xxw.platform.plugin.system.starter.cache.SystemMemoryCacheAutoConfiguration,\
+com.xxw.platform.plugin.system.starter.cache.SystemRedisCacheAutoConfiguration,\
+com.xxw.platform.plugin.system.starter.cache.ResourceMemoryCacheAutoConfiguration,\
+com.xxw.platform.plugin.system.starter.cache.ResourceRedisCacheAutoConfiguration,\
+com.xxw.platform.plugin.system.starter.config.RestErrorViewAutoConfiguration
+org.springframework.context.ApplicationListener=\
+com.xxw.platform.plugin.system.business.menu.listener.MenuResourceUpdateListener,\
+com.xxw.platform.plugin.system.business.role.listener.RoleResourceUpdateListener

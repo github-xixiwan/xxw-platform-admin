@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxw.platform.plugin.auth.starter.AuthAutoConfiguration,\
+com.xxw.platform.plugin.auth.starter.SsoAutoConfiguration,\
+com.xxw.platform.plugin.auth.starter.cache.AuthTokenMemoryCacheAutoConfiguration,\
+com.xxw.platform.plugin.auth.starter.cache.AuthTokenRedisCacheAutoConfiguration,\
+com.xxw.platform.plugin.auth.starter.PasswordRsaPropAutoConfiguration
