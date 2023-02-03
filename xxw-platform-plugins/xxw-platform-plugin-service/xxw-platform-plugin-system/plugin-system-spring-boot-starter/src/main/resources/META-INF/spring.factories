@@ -1,5 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.xxw.platform.plugin.config.starter.SystemHomeStatisticsAutoConfiguration,\
+com.xxw.platform.plugin.system.starter.SystemHomeStatisticsAutoConfiguration,\
 com.xxw.platform.plugin.system.starter.cache.SystemMemoryCacheAutoConfiguration,\
 com.xxw.platform.plugin.system.starter.cache.SystemRedisCacheAutoConfiguration,\
 com.xxw.platform.plugin.system.starter.cache.ResourceMemoryCacheAutoConfiguration,\

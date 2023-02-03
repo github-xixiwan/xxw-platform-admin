@@ -19,5 +19,19 @@
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-auth-sdk</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-jwt-sdk</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-cache-sdk-memory</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-cache-sdk-redis</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 </project>

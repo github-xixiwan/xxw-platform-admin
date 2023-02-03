@@ -31,6 +31,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.xxw.platform.frame.common.annotation.ChineseDescription;
 import com.xxw.platform.plugin.db.api.pojo.entity.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 系统用户角色表
@@ -39,6 +40,7 @@ import lombok.Data;
  * @date 2020/11/6 09:46
  */
 @Data
+@EqualsAndHashCode(callSuper=false)
 @TableName("sys_user_role")
 public class SysUserRole extends BaseEntity {
 

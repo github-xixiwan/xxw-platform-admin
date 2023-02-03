@@ -35,6 +35,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -78,7 +79,7 @@ public class RedisConfigContainer implements ConfigApi {
         jedisPoolConfig.setMinIdle(5);
 
         // 最大等待时间，单位毫秒
-        jedisPoolConfig.setMaxWaitMillis(1000 * 100);
+        jedisPoolConfig.setMaxWait(Duration.ofMillis(1000 * 100));
 
         // 获取连接检测
         jedisPoolConfig.setTestOnBorrow(true);

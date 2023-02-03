@@ -30,6 +30,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.xxw.platform.plugin.db.api.pojo.entity.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 角色资源关联
@@ -38,6 +39,7 @@ import lombok.Data;
  * @date 2020/11/5 下午4:30
  */
 @Data
+@EqualsAndHashCode(callSuper=false)
 @TableName("sys_role_resource")
 public class SysRoleResource extends BaseEntity {
 

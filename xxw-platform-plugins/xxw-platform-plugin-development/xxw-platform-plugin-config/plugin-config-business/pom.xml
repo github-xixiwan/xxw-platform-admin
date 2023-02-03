@@ -22,6 +22,7 @@
         <dependency>
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-config-sdk-redis</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.xxw.platform</groupId>

@@ -48,6 +48,16 @@
             <artifactId>plugin-security-sdk-xss</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-cache-sdk-memory</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-cache-sdk-redis</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <optional>true</optional>

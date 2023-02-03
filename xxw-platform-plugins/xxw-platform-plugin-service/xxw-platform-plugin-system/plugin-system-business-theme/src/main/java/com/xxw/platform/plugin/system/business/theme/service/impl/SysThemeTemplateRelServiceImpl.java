@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -81,7 +82,7 @@ public class SysThemeTemplateRelServiceImpl extends ServiceImpl<SysThemeTemplate
 
         // 构建删除条件
         LambdaQueryWrapper<SysThemeTemplateRel> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.in(SysThemeTemplateRel::getFieldCode, fieldCodes);
+        queryWrapper.in(SysThemeTemplateRel::getFieldCode, Arrays.asList(fieldCodes));
 
         this.remove(queryWrapper);
     }

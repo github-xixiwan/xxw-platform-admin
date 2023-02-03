@@ -49,7 +49,7 @@ import java.lang.reflect.Method;
 @Slf4j
 public class MultiSourceExchangeAop implements Ordered {
 
-    @Pointcut(value = "@annotation(import com.xxw.platform.plugin.dsctn.api.annotation.DataSource)")
+    @Pointcut(value = "@annotation(com.xxw.platform.plugin.ds.api.annotation.DataSource)")
     private void cutService() {
 
     }

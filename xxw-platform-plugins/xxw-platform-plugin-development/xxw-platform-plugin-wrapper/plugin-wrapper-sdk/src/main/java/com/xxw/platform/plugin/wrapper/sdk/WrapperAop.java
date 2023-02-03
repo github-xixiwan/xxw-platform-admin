@@ -63,7 +63,7 @@ public class WrapperAop {
      * @author fengshuonan
      * @date 2020/7/24 17:42
      */
-    @Pointcut("@annotation(import com.xxw.platform.plugin.wrapper.api.annotation.Wrapper)")
+    @Pointcut("@annotation(com.xxw.platform.plugin.wrapper.api.annotation.Wrapper)")
     private void wrapperPointcut() {
     }
 

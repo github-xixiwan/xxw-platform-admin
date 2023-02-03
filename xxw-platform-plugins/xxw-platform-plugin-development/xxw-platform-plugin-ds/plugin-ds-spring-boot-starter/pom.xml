@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-ds-sdk</artifactId>
+            <artifactId>plugin-ds-business</artifactId>
         </dependency>
     </dependencies>
 </project>

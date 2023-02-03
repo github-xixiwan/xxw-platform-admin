@@ -30,6 +30,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.xxw.platform.plugin.db.api.pojo.entity.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 系统用户数据范围表
@@ -38,6 +39,7 @@ import lombok.Data;
  * @date 2020/11/6 09:46
  */
 @Data
+@EqualsAndHashCode(callSuper=false)
 @TableName("sys_user_data_scope")
 public class SysUserDataScope extends BaseEntity {
 

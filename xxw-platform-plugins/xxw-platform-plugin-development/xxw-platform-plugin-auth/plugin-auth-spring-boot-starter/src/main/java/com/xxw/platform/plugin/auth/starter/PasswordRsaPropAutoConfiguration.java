@@ -46,7 +46,7 @@ public class PasswordRsaPropAutoConfiguration {
      * @date 2022/10/16 15:34
      */
     @Bean
-    @ConfigurationProperties(prefix = "guns.password.rsa")
+    @ConfigurationProperties(prefix = "xxw.password.rsa")
     public PwdRsaSecretProperties pwdRsaSecretProperties() {
         return new PwdRsaSecretProperties();
     }

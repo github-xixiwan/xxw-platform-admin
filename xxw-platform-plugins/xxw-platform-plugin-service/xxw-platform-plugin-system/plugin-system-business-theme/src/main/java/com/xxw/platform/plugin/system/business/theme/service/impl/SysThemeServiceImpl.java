@@ -5,6 +5,7 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
+import com.alibaba.fastjson2.TypeReference;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -110,7 +111,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
 
         // 删除保存的图片
         String themeValue = sysTheme.getThemeValue();
-        Map<String, String> themeMap = JSON.parseObject(themeValue, Map.class);
+        Map<String, String> themeMap = JSONObject.parseObject(themeValue, new TypeReference<Map<String, String>>() {});
 
         // 获取map的key
         List<String> themeKeys = new ArrayList<>(themeMap.keySet());

@@ -23,6 +23,10 @@
             <groupId>com.xxw.platform</groupId>
             <artifactId>xxw-platform-frame-nacos</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.xxw.platform</groupId>-->
+<!--            <artifactId>plugin-ds-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-db-spring-boot-starter</artifactId>
@@ -39,17 +43,13 @@
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-wrapper-spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-jwt-spring-boot-starter</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.xxw.platform</groupId>-->
+<!--            <artifactId>plugin-jwt-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-socket-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-ds-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.xxw.platform</groupId>
@@ -59,10 +59,10 @@
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-cache-memory-spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-cache-redis-spring-boot-starter</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.xxw.platform</groupId>-->
+<!--            <artifactId>plugin-cache-redis-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-security-spring-boot-starter</artifactId>
@@ -99,14 +99,14 @@
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-dict-spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-expand-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-group-spring-boot-starter</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.xxw.platform</groupId>-->
+<!--            <artifactId>plugin-expand-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.xxw.platform</groupId>-->
+<!--            <artifactId>plugin-group-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-message-spring-boot-starter</artifactId>

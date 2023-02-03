@@ -30,7 +30,7 @@
         <fastjson2.version>2.0.23</fastjson2.version>
         <easy-captcha.version>1.6.2</easy-captcha.version>
         <druid.version>1.2.15</druid.version>
-        <flyway.version>9.12.0</flyway.version>
+        <flyway.version>7.15.0</flyway.version>
         <jjwt.version>0.9.1</jjwt.version>
         <bcprov-jdk15to18.version>1.72</bcprov-jdk15to18.version>
         <aliyun-sdk-oss.version>3.16.0</aliyun-sdk-oss.version>
@@ -209,6 +209,11 @@
             <dependency>
                 <groupId>com.xxw.platform</groupId>
                 <artifactId>plugin-ds-sdk</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xxw.platform</groupId>
+                <artifactId>plugin-ds-business</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>

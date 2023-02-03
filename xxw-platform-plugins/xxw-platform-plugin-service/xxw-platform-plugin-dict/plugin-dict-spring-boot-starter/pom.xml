@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-dict-api</artifactId>
+            <artifactId>plugin-dict-business</artifactId>
         </dependency>
     </dependencies>
 </project>

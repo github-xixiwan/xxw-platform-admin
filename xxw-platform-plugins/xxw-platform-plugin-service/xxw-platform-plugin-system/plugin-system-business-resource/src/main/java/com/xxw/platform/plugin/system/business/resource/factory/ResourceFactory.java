@@ -28,9 +28,7 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONReader;
-import com.alibaba.fastjson2.JSONWriter;
+import com.alibaba.fastjson2.*;
 import com.xxw.platform.frame.common.enums.YesOrNotEnum;
 import com.xxw.platform.plugin.scanner.api.pojo.resource.FieldMetadata;
 import com.xxw.platform.plugin.scanner.api.pojo.resource.ResourceDefinition;
@@ -120,17 +118,17 @@ public class ResourceFactory {
 
         // 转化校验组
         if (ObjectUtil.isNotEmpty(sysResource.getValidateGroups())) {
-            resourceDefinition.setValidateGroups(JSON.parseObject(sysResource.getValidateGroups(), Set.class, JSONReader.Feature.SupportAutoType));
+            resourceDefinition.setValidateGroups(JSONObject.parseObject(sysResource.getValidateGroups(), new TypeReference<Set<String>>() {},JSONReader.Feature.SupportAutoType));
         }
 
         // 转化接口参数的字段描述
         if (ObjectUtil.isNotEmpty(sysResource.getParamFieldDescriptions())) {
-            resourceDefinition.setParamFieldDescriptions(JSON.parseObject(sysResource.getParamFieldDescriptions(), Set.class, JSONReader.Feature.SupportAutoType));
+            resourceDefinition.setParamFieldDescriptions(JSONObject.parseObject(sysResource.getValidateGroups(), new TypeReference<Set<FieldMetadata>>() {},JSONReader.Feature.SupportAutoType));
         }
 
         // 转化接口返回结果的字段描述
         if (ObjectUtil.isNotEmpty(sysResource.getResponseFieldDescriptions())) {
-            resourceDefinition.setResponseFieldDescriptions(JSON.parseObject(sysResource.getResponseFieldDescriptions(), FieldMetadata.class, JSONReader.Feature.SupportAutoType));
+            resourceDefinition.setResponseFieldDescriptions(JSONObject.parseObject(sysResource.getResponseFieldDescriptions(), new TypeReference<FieldMetadata>() {}, JSONReader.Feature.SupportAutoType));
         }
 
         return resourceDefinition;

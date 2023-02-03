@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xxw.platform.plugin.config.starter.SysConfigAutoConfiguration
+org.springframework.context.ApplicationListener=\
+com.xxw.platform.plugin.config.business.listener.ConfigInitListener
