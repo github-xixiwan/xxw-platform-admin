@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xxw.platform.plugin.ds.starter.DataSourceContainerAutoConfiguration
+org.springframework.context.ApplicationListener=\
+com.xxw.platform.plugin.ds.sdk.listener.DataSourceInitListener

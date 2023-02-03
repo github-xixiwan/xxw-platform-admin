@@ -35,7 +35,7 @@ public class DevOpsReportProperties {
     /**
      * FieldMetadata类的全路径
      * <p>
-     * 默认是cn.stylefeng.roses开头的
+     * 默认是com.xxw.platform开头的
      * <p>
      * 如果FieldMetadata没有改过包名，不用管这个配置，如果FieldMetadata改过包名，这里则填写改过包名的全路径
      */

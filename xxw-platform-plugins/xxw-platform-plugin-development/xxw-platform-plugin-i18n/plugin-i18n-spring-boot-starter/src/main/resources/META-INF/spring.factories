@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xxw.platform.plugin.i18n.starter.TranslationAutoConfiguration
+org.springframework.context.ApplicationListener=\
+com.xxw.platform.plugin.i18n.sdk.listener.TranslationDictInitListener

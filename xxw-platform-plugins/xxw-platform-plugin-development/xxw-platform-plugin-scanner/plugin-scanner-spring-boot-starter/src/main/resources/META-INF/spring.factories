@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xxw.platform.plugin.scanner.starter.ResourceAutoConfiguration
+org.springframework.context.ApplicationListener=\
+com.xxw.platform.plugin.scanner.sdk.ResourceReportListener

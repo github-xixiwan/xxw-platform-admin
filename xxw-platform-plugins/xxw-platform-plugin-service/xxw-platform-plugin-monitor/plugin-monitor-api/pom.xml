@@ -4,20 +4,21 @@
         xmlns="http://maven.apache.org/POM/4.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>plugin-message-spring-boot-starter</artifactId>
-    <name>plugin-message-spring-boot-starter</name>
+    <artifactId>plugin-monitor-api</artifactId>
+    <name>plugin-monitor-api</name>
 
     <parent>
         <groupId>com.xxw.platform</groupId>
-        <artifactId>xxw-platform-plugin-message</artifactId>
+        <artifactId>xxw-platform-plugin-monitor</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>
         <dependency>
-            <groupId>com.xxw.platform</groupId>
-            <artifactId>plugin-message-business</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

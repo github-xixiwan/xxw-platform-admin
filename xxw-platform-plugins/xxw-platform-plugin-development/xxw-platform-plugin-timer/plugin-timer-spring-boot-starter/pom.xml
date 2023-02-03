@@ -19,5 +19,9 @@
             <groupId>com.xxw.platform</groupId>
             <artifactId>plugin-timer-sdk-hutool</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.xxw.platform</groupId>
+            <artifactId>plugin-timer-business</artifactId>
+        </dependency>
     </dependencies>
 </project>

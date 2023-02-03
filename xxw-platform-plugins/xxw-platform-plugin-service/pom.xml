@@ -20,5 +20,6 @@
         <module>xxw-platform-plugin-message</module>
         <module>xxw-platform-plugin-system</module>
         <module>xxw-platform-plugin-migration</module>
+        <module>xxw-platform-plugin-monitor</module>
     </modules>
 </project>
