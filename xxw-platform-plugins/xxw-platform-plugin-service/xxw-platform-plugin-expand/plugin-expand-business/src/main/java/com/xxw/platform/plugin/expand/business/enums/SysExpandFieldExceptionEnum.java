@@ -7,7 +7,7 @@ import lombok.Getter;
 /**
  * 业务拓展-字段信息异常相关枚举
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @Getter

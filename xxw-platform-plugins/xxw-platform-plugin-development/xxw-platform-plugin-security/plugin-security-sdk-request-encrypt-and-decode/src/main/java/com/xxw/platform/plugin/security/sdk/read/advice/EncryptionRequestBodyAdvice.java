@@ -41,7 +41,7 @@ import java.util.Date;
 /**
  * 请求参数解密
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/3/23 12:53
  */
 @Slf4j
@@ -60,7 +60,7 @@ public class EncryptionRequestBodyAdvice implements RequestBodyAdvice {
     /**
      * 设置条件,这个条件为true才会执行下面的beforeBodyRead方法
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/10/29 9:32
      */
     @Override

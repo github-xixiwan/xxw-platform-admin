@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 通用组件选择器的选择对象的封装
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/26 11:46
  */
 @Data

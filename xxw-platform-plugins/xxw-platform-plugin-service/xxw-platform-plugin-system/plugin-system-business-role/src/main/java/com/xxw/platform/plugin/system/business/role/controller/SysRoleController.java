@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.role.controller;
 
 import cn.hutool.core.collection.ListUtil;
@@ -50,7 +26,7 @@ import java.util.List;
 /**
  * 系统角色控制器
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2020/11/5 上午10:19
  */
 @RestController
@@ -66,7 +42,7 @@ public class SysRoleController {
     /**
      * 添加系统角色
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:38
      */
     @PostResource(name = "添加角色", path = "/sysRole/add")
@@ -79,7 +55,7 @@ public class SysRoleController {
     /**
      * 删除系统角色
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:48
      */
     @PostResource(name = "角色删除", path = "/sysRole/delete")
@@ -92,7 +68,7 @@ public class SysRoleController {
     /**
      * 编辑系统角色
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:49
      */
     @PostResource(name = "角色编辑", path = "/sysRole/edit")
@@ -105,7 +81,7 @@ public class SysRoleController {
     /**
      * 查看系统角色
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:50
      */
     @GetResource(name = "角色查看", path = "/sysRole/detail")
@@ -116,7 +92,7 @@ public class SysRoleController {
     /**
      * 查询系统角色
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:19
      */
     @GetResource(name = "查询角色", path = "/sysRole/page")
@@ -127,7 +103,7 @@ public class SysRoleController {
     /**
      * 角色授权资源
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/22 19:51
      */
     @PostResource(name = "角色授权资源", path = "/sysRole/grantResource")
@@ -139,7 +115,7 @@ public class SysRoleController {
     /**
      * 角色授权菜单和按钮
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/1/9 18:04
      */
     @PostResource(name = "角色授权菜单和按钮", path = "/sysRole/grantMenuAndButton")
@@ -151,7 +127,7 @@ public class SysRoleController {
     /**
      * 角色授权菜单，新版界面用
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/8/11 9:58
      */
     @PostResource(name = "角色授权菜单", path = "/sysRole/grantMenu")
@@ -163,7 +139,7 @@ public class SysRoleController {
     /**
      * 角色绑定或取消绑定菜单和按钮
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/8/11 9:58
      */
     @PostResource(name = "角色绑定或取消绑定菜单和按钮", path = "/sysRole/grantMenusAndButtons")
@@ -174,7 +150,7 @@ public class SysRoleController {
     /**
      * 设置角色绑定的数据范围类型和数据范围
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/28 16:05
      */
     @PostResource(name = "设置角色绑定的数据范围类型和数据范围", path = "/sysRole/grantDataScope")
@@ -186,7 +162,7 @@ public class SysRoleController {
     /**
      * 系统角色下拉（用于用户授权角色时选择）
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/6 13:49
      */
     @GetResource(name = "角色下拉", path = "/sysRole/dropDown")
@@ -197,7 +173,7 @@ public class SysRoleController {
     /**
      * 拥有菜单
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:58
      */
     @GetResource(name = "角色拥有菜单", path = "/sysRole/getRoleMenus")
@@ -209,7 +185,7 @@ public class SysRoleController {
     /**
      * 拥有数据
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/5 上午10:59
      */
     @GetResource(name = "角色拥有数据", path = "/sysRole/getRoleDataScope")
@@ -220,7 +196,7 @@ public class SysRoleController {
     /**
      * 获取角色下拉列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/6/8 14:57
      */
     @GetResource(name = "获取角色下拉列表", path = "/sysRole/getRoleSelectList")
@@ -231,7 +207,7 @@ public class SysRoleController {
     /**
      * 获取角色信息集合
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/2 14:08
      */
     @PostResource(name = "获取角色信息集合", path = "/sysRole/getRoleInfoListByIds")

@@ -19,7 +19,7 @@ import java.util.Properties;
 /**
  * Mybatis拦截器，拦截入库参数
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/3 11:58
  */
 @Slf4j

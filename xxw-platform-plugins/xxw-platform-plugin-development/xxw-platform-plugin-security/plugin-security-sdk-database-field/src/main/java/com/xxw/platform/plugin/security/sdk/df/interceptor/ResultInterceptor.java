@@ -20,7 +20,7 @@ import java.util.Properties;
 /**
  * Mybatis拦截器，拦截返回参数
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/3 11:58
  */
 @Slf4j
@@ -63,7 +63,7 @@ public class ResultInterceptor implements Interceptor {
      * 对象处理
      *
      * @return
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/5 9:52
      **/
     private void objectProcessing(Object result) throws IllegalAccessException {
@@ -85,7 +85,7 @@ public class ResultInterceptor implements Interceptor {
      * @param result
      * @param field
      * @return
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/5 9:52
      **/
     private void fieldProcessing(Object result, Field field) throws IllegalAccessException {
@@ -111,7 +111,7 @@ public class ResultInterceptor implements Interceptor {
      *
      * @param field 被判断字段
      * @return {@link boolean}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/5 9:35
      **/
     private boolean isTag(Field field) {

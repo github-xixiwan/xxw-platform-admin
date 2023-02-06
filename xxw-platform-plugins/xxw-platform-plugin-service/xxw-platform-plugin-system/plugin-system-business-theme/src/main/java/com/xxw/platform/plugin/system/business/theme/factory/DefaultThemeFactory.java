@@ -15,7 +15,7 @@ import java.util.HashMap;
 /**
  * 如果当前激活的系统主题没有，或者获取不到，则使用本类创建的默认系统主题
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/11 9:30
  */
 @Data
@@ -24,7 +24,7 @@ public class DefaultThemeFactory {
     /**
      * 获取系统默认主题
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/11 9:31
      */
     public static DefaultTheme getSystemDefaultTheme() {
@@ -32,9 +32,9 @@ public class DefaultThemeFactory {
         defaultTheme.setGunsMgrBeiUrl("https://beian.miit.gov.cn/");
         defaultTheme.setGunsMgrBeiNo("京ICP备001-1");
         defaultTheme.setGunsMgrFavicon("1479753047148322818");
-        defaultTheme.setGunsMgrFooterText("stylefeng开源技术 javaguns.com");
+        defaultTheme.setGunsMgrFooterText("xixiwan-platform开源技术");
         defaultTheme.setGunsMgrLogo("1479753047148322818");
-        defaultTheme.setGunsMgrName("Guns Tech.");
+        defaultTheme.setGunsMgrName("xixiwan-platform");
         defaultTheme.setGunsMgrLoginBackgroundImg("1479751422149074948");
         return defaultTheme;
     }
@@ -42,7 +42,7 @@ public class DefaultThemeFactory {
     /**
      * 通过jsonObject解析默认主题数据
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/11 9:31
      */
     public static DefaultTheme parseDefaultTheme(JSONObject jsonObject) {

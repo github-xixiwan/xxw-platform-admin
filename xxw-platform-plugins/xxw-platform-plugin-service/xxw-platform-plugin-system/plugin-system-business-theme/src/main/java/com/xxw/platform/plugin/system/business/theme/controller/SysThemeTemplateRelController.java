@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 /**
  * 系统主题模板属性关系控制器
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/24 10:55
  */
 @RestController
@@ -30,7 +30,7 @@ public class SysThemeTemplateRelController {
     /**
      * 增加系统主题模板属性关系
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/24 11:17
      */
     @PostResource(name = "增加系统主题模板属性关系", path = "/sysThemeTemplateRel/add")
@@ -43,7 +43,7 @@ public class SysThemeTemplateRelController {
     /**
      * 删除系统主题模板属性关系
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/24 11:23
      */
     @PostResource(name = "删除系统主题模板属性关系", path = "/sysThemeTemplateRel/del")

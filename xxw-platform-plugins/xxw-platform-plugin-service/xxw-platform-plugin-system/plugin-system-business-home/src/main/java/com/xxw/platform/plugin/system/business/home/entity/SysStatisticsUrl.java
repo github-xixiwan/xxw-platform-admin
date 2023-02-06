@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 常用功能列表实例类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/02/10 21:17
  */
 @TableName("sys_statistics_url")

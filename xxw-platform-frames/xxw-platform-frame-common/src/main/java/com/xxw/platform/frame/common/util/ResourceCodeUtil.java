@@ -3,14 +3,14 @@ package com.xxw.platform.frame.common.util;
 import cn.hutool.core.util.StrUtil;
 
 /**
- * Guns资源缓存前缀标识替换工具
+ * 资源缓存前缀标识替换工具
  * <p>
  * Guns资源编码为固定的guns$开头，如果项目编码修改后，应将资源标识前缀进行修改
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/11/16 23:07
  */
-public class GunsResourceCodeUtil {
+public class ResourceCodeUtil {
 
     /**
      * Guns默认的资源前缀标识
@@ -24,7 +24,7 @@ public class GunsResourceCodeUtil {
      * <p>
      * 修改之后为：{newAppCode参数}$sys_notice$add
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/16 23:09
      */
     public static String replace(String resourceCode, String newAppCode) {

@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.user.controller;
 
 import com.xxw.platform.frame.common.annotation.BusinessLog;
@@ -55,7 +31,7 @@ import java.util.List;
 /**
  * 用户管理控制器
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2020/11/6 09:47
  */
 @RestController
@@ -71,7 +47,7 @@ public class SysUserController {
     /**
      * 增加用户
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @PostResource(name = "系统用户_增加", path = "/sysUser/add")
@@ -84,7 +60,7 @@ public class SysUserController {
     /**
      * 删除系统用户
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @PostResource(name = "系统用户_删除", path = "/sysUser/delete")
@@ -97,7 +73,7 @@ public class SysUserController {
     /**
      * 批量删除系统用户
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/4/7 16:12
      */
     @PostResource(name = "系统用户_批量删除系统用户", path = "/sysUser/batchDelete")
@@ -110,7 +86,7 @@ public class SysUserController {
     /**
      * 编辑系统用户
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @PostResource(name = "系统用户_编辑", path = "/sysUser/edit")
@@ -123,7 +99,7 @@ public class SysUserController {
     /**
      * 修改状态
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @PostResource(name = "系统用户_修改状态", path = "/sysUser/changeStatus")
@@ -136,7 +112,7 @@ public class SysUserController {
     /**
      * 重置密码
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:48
      */
     @PostResource(name = "系统用户_重置密码", path = "/sysUser/resetPwd")
@@ -149,7 +125,7 @@ public class SysUserController {
     /**
      * 授权角色
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @PostResource(name = "系统用户_授权角色", path = "/sysUser/grantRole")
@@ -162,7 +138,7 @@ public class SysUserController {
     /**
      * 授权数据
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @PostResource(name = "系统用户_授权数据", path = "/sysUser/grantData")
@@ -175,7 +151,7 @@ public class SysUserController {
     /**
      * 查看系统用户
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @GetResource(name = "系统用户_查看", path = "/sysUser/detail")
@@ -186,7 +162,7 @@ public class SysUserController {
     /**
      * 获取当前登录用户的信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/1 19:01
      */
     @GetResource(name = "获取当前登录用户的信息", path = "/sysUser/currentUserInfo", requiredPermission = false)
@@ -201,7 +177,7 @@ public class SysUserController {
     /**
      * 查询系统用户
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:49
      */
     @GetResource(name = "系统用户_查询", path = "/sysUser/page")
@@ -213,7 +189,7 @@ public class SysUserController {
     /**
      * 导出用户
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:57
      */
     @GetResource(name = "系统用户_导出", path = "/sysUser/export")
@@ -225,7 +201,7 @@ public class SysUserController {
     /**
      * 获取用户选择树数据（用在系统通知，选择发送人的时候）
      *
-     * @author liuhanqing
+     * @author liaoxiting
      * @date 2021/1/15 8:28
      */
     @GetResource(name = "获取用户选择树数据（用在系统通知，选择发送人的时候）", path = "/sysUser/getUserSelectTree")
@@ -236,7 +212,7 @@ public class SysUserController {
     /**
      * 获取用户数据范围列表
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:51
      */
     @GetResource(name = "系统用户_获取用户数据范围列表", path = "/sysUser/getUserDataScope")
@@ -248,7 +224,7 @@ public class SysUserController {
     /**
      * 获取用户的角色列表
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 13:50
      */
     @GetResource(name = "系统用户_获取用户的角色列表", path = "/sysUser/getUserRoles")
@@ -264,7 +240,7 @@ public class SysUserController {
      *
      * @param sysUserRequest 请求参数：name 姓名(可选)
      * @return 返回除超级管理员外的用户列表
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 09:49
      */
     @GetResource(name = "系统用户_选择器", path = "/sysUser/selector")
@@ -279,7 +255,7 @@ public class SysUserController {
      *
      * @param sysUserRequest 请求参数：name 姓名(可选)
      * @return 返回除超级管理员外的用户列表
-     * @author luojie
+     * @author liaoxiting
      * @date 2020/11/6 09:49
      */
     @GetResource(name = "系统用户_选择器", path = "/sysUser/selectorAll")
@@ -290,7 +266,7 @@ public class SysUserController {
     /**
      * 获取所有用户ID和名称列表
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/17 14:24
      **/
     @GetResource(name = "获取所有用户ID和名称列表", path = "/sysUser/getAllUserIdList")
@@ -301,7 +277,7 @@ public class SysUserController {
     /**
      * 运维平台接口检测
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/27 14:29
      **/
     @GetResource(name = "运维平台接口检测", path = "/sysUser/devopsApiCheck", requiredLogin = false, requiredPermission = false)
@@ -312,7 +288,7 @@ public class SysUserController {
     /**
      * 根据用户主键获取用户对应的token
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/17 14:24
      **/
     @GetResource(name = "根据用户主键获取用户对应的token", path = "/sysUser/getTokenByUserId")
@@ -323,7 +299,7 @@ public class SysUserController {
     /**
      * 根据条件筛选用户
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/6/17 14:46
      */
     @GetResource(name = "根据条件筛选用户", path = "/sysUser/getUserListByConditions")
@@ -334,7 +310,7 @@ public class SysUserController {
     /**
      * 获取用户列表，通过用户id集合
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/25 10:27
      */
     @PostResource(name = "获取用户列表，通过用户id集合", path = "/sysUser/getUsersByUserIds")

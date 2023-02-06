@@ -15,7 +15,7 @@ import com.xxw.platform.plugin.system.api.pojo.user.SysUserDTO;
 /**
  * Json响应的针对用户的处理
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/7 10:09
  */
 public class UserFormatProcess extends BaseSimpleFieldFormatProcess {
@@ -54,7 +54,7 @@ public class UserFormatProcess extends BaseSimpleFieldFormatProcess {
     /**
      * 业务逻辑执行
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/10 1:29
      */
     private Object execute(Object businessId) {

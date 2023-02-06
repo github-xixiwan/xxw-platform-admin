@@ -8,7 +8,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
  * <p>
  * 此类的使用必须激活 ConfigInitListener
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/2/26 18:27
  */
 @Getter

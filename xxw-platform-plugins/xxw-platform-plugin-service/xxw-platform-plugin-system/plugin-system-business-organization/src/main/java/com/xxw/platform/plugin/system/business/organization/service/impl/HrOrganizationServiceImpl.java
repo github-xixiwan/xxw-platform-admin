@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.organization.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
@@ -76,7 +52,7 @@ import java.util.stream.Collectors;
 /**
  * 组织架构管理
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/11/04 11:05
  */
 @Service
@@ -435,7 +411,7 @@ public class HrOrganizationServiceImpl extends ServiceImpl<HrOrganizationMapper,
     /**
      * 创建组织架构的通用条件查询wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/6 10:16
      */
     private LambdaQueryWrapper<HrOrganization> createWrapper(HrOrganizationRequest hrOrganizationRequest) {
@@ -492,12 +468,10 @@ public class HrOrganizationServiceImpl extends ServiceImpl<HrOrganizationMapper,
 
         return queryWrapper;
     }
-
-
     /**
      * 获取系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     private HrOrganization queryOrganization(HrOrganizationRequest hrOrganizationRequest) {
@@ -515,7 +489,7 @@ public class HrOrganizationServiceImpl extends ServiceImpl<HrOrganizationMapper,
      * <p>
      * 如果pid不是顶级节点，pids就是父节点的pids + [pid] + ,
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/5 13:45
      */
     private void fillParentIds(HrOrganization hrOrganization) {
@@ -535,7 +509,7 @@ public class HrOrganizationServiceImpl extends ServiceImpl<HrOrganizationMapper,
     /**
      * 根据数据范围获取组织机构列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/2/8 20:22
      */
     private List<HrOrganization> findListByDataScope(HrOrganizationRequest hrOrganizationRequest) {
@@ -575,7 +549,7 @@ public class HrOrganizationServiceImpl extends ServiceImpl<HrOrganizationMapper,
      * @param orgId          指定机构id
      * @param parentLevelNum 上级机构的层级数，从0开始，0代表不计算直接返回本身
      * @param reverse        是否反转，true-代表自下而上计算，false-代表自上而下计算
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/10/1 11:45
      */
     private Long calcParentOrgId(Long orgId, Integer parentLevelNum, boolean reverse) {

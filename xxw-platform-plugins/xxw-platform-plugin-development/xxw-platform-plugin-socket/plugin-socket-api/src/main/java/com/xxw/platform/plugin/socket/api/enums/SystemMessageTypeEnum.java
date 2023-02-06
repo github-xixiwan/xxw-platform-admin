@@ -7,7 +7,7 @@ import lombok.Getter;
  * <p>
  * 说明：该枚举适用于服务端监听首次连接和断开连接
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/3 上午9:14
  */
 @Getter

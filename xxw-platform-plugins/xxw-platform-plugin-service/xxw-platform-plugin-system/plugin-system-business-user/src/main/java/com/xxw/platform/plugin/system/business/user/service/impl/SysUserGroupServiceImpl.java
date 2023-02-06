@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * 用户组业务实现层
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/26 10:12
  */
 @Service
@@ -108,7 +108,7 @@ public class SysUserGroupServiceImpl extends ServiceImpl<SysUserGroupMapper, Sys
     /**
      * 获取信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     private SysUserGroup querySysUserGroup(SysUserGroupRequest sysUserGroupRequest) {
@@ -122,7 +122,7 @@ public class SysUserGroupServiceImpl extends ServiceImpl<SysUserGroupMapper, Sys
     /**
      * 创建查询wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     private LambdaQueryWrapper<SysUserGroup> createWrapper(SysUserGroupRequest sysUserGroupRequest) {

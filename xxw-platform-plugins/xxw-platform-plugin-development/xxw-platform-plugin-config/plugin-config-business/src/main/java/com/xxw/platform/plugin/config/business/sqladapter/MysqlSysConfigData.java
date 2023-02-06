@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Mysql数据库的系统配置表获取
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/27 21:18
  */
 @Slf4j

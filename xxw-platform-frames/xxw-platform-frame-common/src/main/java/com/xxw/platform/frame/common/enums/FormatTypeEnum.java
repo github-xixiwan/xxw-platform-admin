@@ -3,7 +3,7 @@ package com.xxw.platform.frame.common.enums;
 /**
  * 字段格式化的类型
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/6 11:48
  */
 public enum FormatTypeEnum {

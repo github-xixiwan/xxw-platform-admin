@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * 针对@EnumFieldFormat注解的具体序列化过程
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/6 16:57
  */
 @Slf4j

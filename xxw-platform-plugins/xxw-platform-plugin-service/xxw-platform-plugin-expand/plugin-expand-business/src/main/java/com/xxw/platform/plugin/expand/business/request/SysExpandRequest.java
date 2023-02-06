@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 业务拓展封装类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @EqualsAndHashCode(callSuper = true)
@@ -74,11 +74,9 @@ public class SysExpandRequest extends BaseRequest {
     /**
      * 获取业务元数据信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/3/31 15:25
      */
     public @interface getByExpandCode {
     }
-
-
 }

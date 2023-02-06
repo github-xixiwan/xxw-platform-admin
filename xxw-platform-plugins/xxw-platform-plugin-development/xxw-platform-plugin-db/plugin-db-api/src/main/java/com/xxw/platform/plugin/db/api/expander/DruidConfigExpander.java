@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.db.api.expander;
 
 import cn.hutool.core.util.RandomUtil;
@@ -32,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * Druid数据源的一些配置
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/1/10 11:32
  */
 @Slf4j
@@ -41,7 +17,7 @@ public class DruidConfigExpander {
     /**
      * Druid监控界面的url映射
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:32
      */
     public static String getDruidUrlMappings() {
@@ -51,7 +27,7 @@ public class DruidConfigExpander {
     /**
      * Druid控制台账号
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:32
      */
     public static String getDruidAdminAccount() {
@@ -61,7 +37,7 @@ public class DruidConfigExpander {
     /**
      * Druid控制台账号密码
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminPassword() {
@@ -81,7 +57,7 @@ public class DruidConfigExpander {
      * Druid控制台的监控数据是否可以重置清零
      *
      * @return true-可以重置，false-不可以
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminResetFlag() {
@@ -91,7 +67,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的拦截范围
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterUrlPattern() {
@@ -101,7 +77,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的排除拦截表达式
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterExclusions() {
@@ -111,7 +87,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的session统计开关
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterSessionStatEnable() {
@@ -121,7 +97,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的session名称
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterSessionName() {
@@ -131,7 +107,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的session最大监控数
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterSessionStatMaxCount() {
@@ -141,7 +117,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的cookie名称
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterPrincipalCookieName() {
@@ -151,7 +127,7 @@ public class DruidConfigExpander {
     /**
      * druid web url统计的是否开启监控单个url调用的sql列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/10 11:34
      */
     public static String getDruidAdminWebStatFilterProfileEnable() {

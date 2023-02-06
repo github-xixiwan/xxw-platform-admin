@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 业务拓展-字段信息业务实现层
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @Service
@@ -68,7 +68,7 @@ public class SysExpandFieldServiceImpl extends ServiceImpl<SysExpandFieldMapper,
     /**
      * 获取信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     private SysExpandField querySysExpandField(SysExpandFieldRequest sysExpandFieldRequest) {
@@ -82,7 +82,7 @@ public class SysExpandFieldServiceImpl extends ServiceImpl<SysExpandFieldMapper,
     /**
      * 创建查询wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     private LambdaQueryWrapper<SysExpandField> createWrapper(SysExpandFieldRequest sysExpandFieldRequest) {

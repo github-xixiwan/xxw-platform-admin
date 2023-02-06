@@ -94,8 +94,6 @@
             order by suser.create_time desc
         </where>
     </sql>
-
-
     <!--获取用户分页列表-->
     <select id="findUserPage" resultType="com.xxw.platform.plugin.system.api.pojo.user.SysUserDTO">
         <include refid="user_list_mysql"></include>

@@ -9,7 +9,7 @@ import java.util.List;
  * <p>
  * 目前添加自定义InsertBatch方法
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/17 14:24
  */
 public interface CustomBaseMapper<T> extends BaseMapper<T> {
@@ -17,7 +17,7 @@ public interface CustomBaseMapper<T> extends BaseMapper<T> {
     /**
      * 批量插入，拼接insert方式，提高效率
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/17 14:27
      */
     int insertBatchSomeColumn(List<T> entityList);

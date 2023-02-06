@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 组织机构审批人封装类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/13 23:15
  */
 @EqualsAndHashCode(callSuper = true)
@@ -52,8 +52,6 @@ public class HrOrgApproverRequest extends BaseRequest {
     @ChineseDescription("用户id集合")
     @NotEmpty(message = "用户id集合不能为空", groups = {add.class})
     private List<Long> userIdList;
-
-
     /**
      * 上级负责人的级别，从0开始，0为同部门领导，1为上一级领导，以此类推
      */

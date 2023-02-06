@@ -9,7 +9,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * 跨域过滤器的配置
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/6/8 15:11
  */
 @Configuration
@@ -18,7 +18,7 @@ public class CorsFilterConfiguration {
     /**
      * 开启跨域访问拦截器
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/6/8 15:12
      */
     @Bean

@@ -8,7 +8,7 @@ import lombok.Getter;
 /**
  * 系统主题模板异常类
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/23 17:01
  */
 @Getter

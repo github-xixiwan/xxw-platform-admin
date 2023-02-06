@@ -19,7 +19,7 @@ import java.util.List;
  * <p>
  * 如果是Spring boot项目，通过注入SocketOperatorApi接口操作socket，需将本来交给Spring管理
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/2 上午10:41
  */
 public class WebSocketOperator implements SocketOperatorApi {

@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 剪裁图片dto传输实体
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/7/5 14:10
  */
 @Data

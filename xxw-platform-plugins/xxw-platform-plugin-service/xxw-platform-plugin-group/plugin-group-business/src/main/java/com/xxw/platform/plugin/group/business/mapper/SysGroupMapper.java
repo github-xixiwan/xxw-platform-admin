@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 业务分组 Mapper 接口
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/05/11 12:54
  */
 public interface SysGroupMapper extends BaseMapper<SysGroup> {
@@ -18,7 +18,7 @@ public interface SysGroupMapper extends BaseMapper<SysGroup> {
     /**
      * 获取用户分组列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/5/11 16:49
      */
     List<SysGroupDTO> getUserGroupList(@Param("groupBizCode") String groupBizCode, @Param("userId") Long userId, @Param("getTotal") boolean getTotal);

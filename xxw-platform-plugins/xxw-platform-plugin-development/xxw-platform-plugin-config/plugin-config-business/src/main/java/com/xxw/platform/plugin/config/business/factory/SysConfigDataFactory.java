@@ -11,7 +11,7 @@ import com.xxw.platform.plugin.config.business.sqladapter.PgsqlSysConfigData;
 /**
  * SysConfigDataApi的创建工厂
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/27 21:27
  */
 public class SysConfigDataFactory {
@@ -19,7 +19,7 @@ public class SysConfigDataFactory {
     /**
      * 通过jdbc url获取api
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/27 21:27
      */
     public static SysConfigDataApi getSysConfigDataApi(String jdbcUrl) {

@@ -39,7 +39,7 @@ import java.util.Map;
 /**
  * 业务拓展业务实现层
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @Service
@@ -230,7 +230,7 @@ public class SysExpandServiceImpl extends ServiceImpl<SysExpandMapper, SysExpand
     /**
      * 获取信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     private SysExpand querySysExpand(SysExpandRequest sysExpandRequest) {
@@ -244,7 +244,7 @@ public class SysExpandServiceImpl extends ServiceImpl<SysExpandMapper, SysExpand
     /**
      * 创建查询wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     private LambdaQueryWrapper<SysExpand> createWrapper(SysExpandRequest sysExpandRequest) {

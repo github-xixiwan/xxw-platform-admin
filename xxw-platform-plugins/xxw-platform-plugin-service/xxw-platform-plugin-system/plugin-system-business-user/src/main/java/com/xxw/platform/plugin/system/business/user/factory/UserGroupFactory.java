@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 /**
  * 用户组创建工厂
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/26 14:28
  */
 public class UserGroupFactory {
@@ -26,7 +26,7 @@ public class UserGroupFactory {
      * @param userGroupId         用户组的组id
      * @param sysUserGroupRequest 前端传递的参数
      * @return 最终转化的用户组详情实体
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/26 14:29
      */
     public static List<SysUserGroupDetail> createUserGroupDetail(Long userGroupId, SysUserGroupRequest sysUserGroupRequest) {
@@ -60,7 +60,7 @@ public class UserGroupFactory {
     }
 
     /**
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/26 15:37
      */
     public static SysUserGroup parseToEntity(SysUserGroup sysUserGroup, List<SysUserGroupDetail> sysUserGroupDetailList) {
@@ -98,7 +98,7 @@ public class UserGroupFactory {
     /**
      * 生成指定类型的userGroupDetail存储类型
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/26 14:36
      */
     public static List<SysUserGroupDetail> parseToUserGroupDetail(Long userGroupId, UserGroupSelectTypeEnum userGroupSelectTypeEnum, List<SelectItem> paramList) {
@@ -138,7 +138,7 @@ public class UserGroupFactory {
     /**
      * 解析到可选择的item
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/26 15:44
      */
     public static List<SelectItem> parseToSelectItem(List<SysUserGroupDetail> userGroupDetailList) {

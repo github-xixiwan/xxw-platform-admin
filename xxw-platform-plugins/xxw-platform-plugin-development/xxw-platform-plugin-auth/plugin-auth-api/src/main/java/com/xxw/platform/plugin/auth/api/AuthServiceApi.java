@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.auth.api;
 
 import com.xxw.platform.plugin.auth.api.exception.AuthException;
@@ -34,7 +10,7 @@ import com.xxw.platform.plugin.jwt.api.pojo.payload.DefaultJwtPayload;
 /**
  * 认证服务的接口，包括基本的登录退出操作和校验token等操作
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/26 14:41
  */
 public interface AuthServiceApi {
@@ -44,7 +20,7 @@ public interface AuthServiceApi {
      *
      * @param loginRequest 登录的请求
      * @return token 一般为jwt token
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/26 14:41
      */
     LoginResponse login(LoginRequest loginRequest);
@@ -53,7 +29,7 @@ public interface AuthServiceApi {
      * 登录（直接用账号登录），一般用在第三方登录
      *
      * @param username 账号
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/26 14:40
      */
     LoginResponse loginWithUserName(String username);
@@ -63,7 +39,7 @@ public interface AuthServiceApi {
      *
      * @param username 账号
      * @param caToken  sso登录成功后的会话
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:44
      */
     LoginResponse loginWithUserNameAndCaToken(String username, String caToken);
@@ -72,7 +48,7 @@ public interface AuthServiceApi {
      * 通过token进行登录，一般用在单点登录服务
      *
      * @param loginWithTokenRequest 请求
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:44
      */
     LoginResponse LoginWithToken(LoginWithTokenRequest loginWithTokenRequest);
@@ -80,7 +56,7 @@ public interface AuthServiceApi {
     /**
      * 当前登录人退出登录
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/19 14:16
      */
     void logout();
@@ -89,7 +65,7 @@ public interface AuthServiceApi {
      * 移除某个token，也就是退出某个用户
      *
      * @param token 某个用户的登录token
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/19 14:16
      */
     void logoutWithToken(String token);
@@ -102,7 +78,7 @@ public interface AuthServiceApi {
      * @param token 某个用户的登录token
      * @return token解析出的用户基本信息
      * @throws AuthException 认证异常，如果token错误或过期，会有相关的异常抛出
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/19 14:16
      */
     DefaultJwtPayload validateToken(String token) throws AuthException;
@@ -112,7 +88,7 @@ public interface AuthServiceApi {
      *
      * @param token      用户登陆的token
      * @param requestUrl 被校验的url
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/22 16:03
      */
     void checkAuth(String token, String requestUrl);
@@ -120,7 +96,7 @@ public interface AuthServiceApi {
     /**
      * 取消冻结帐号
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/1/22 16:37
      */
     void cancelFreeze(LoginRequest loginRequest);
@@ -131,7 +107,7 @@ public interface AuthServiceApi {
      * @param token             用户旧的token
      * @param defaultJwtPayload jwt的payload信息
      * @return 新的当前登录用户
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/10/17 0:04
      */
     LoginUser createNewLoginInfo(String token, DefaultJwtPayload defaultJwtPayload);

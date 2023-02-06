@@ -6,7 +6,7 @@ import com.xxw.platform.plugin.file.business.entity.SysFileStorage;
 /**
  * 文件存储信息 Mapper 接口
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/01/08 15:53
  */
 public interface SysFileStorageMapper extends BaseMapper<SysFileStorage> {

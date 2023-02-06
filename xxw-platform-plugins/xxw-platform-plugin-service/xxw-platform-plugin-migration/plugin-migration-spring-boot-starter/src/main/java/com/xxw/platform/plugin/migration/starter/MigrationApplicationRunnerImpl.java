@@ -14,7 +14,7 @@ import java.util.Map;
  * <p>
  * 用于扫描所有的迁移实现类
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/7 9:49
  */
 @Component

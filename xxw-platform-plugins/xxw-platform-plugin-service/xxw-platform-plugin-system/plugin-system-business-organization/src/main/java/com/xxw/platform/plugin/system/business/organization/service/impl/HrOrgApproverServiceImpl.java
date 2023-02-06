@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
 /**
  * 组织机构审批人业务实现层
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/13 23:15
  */
 @Service
@@ -202,7 +202,7 @@ public class HrOrgApproverServiceImpl extends ServiceImpl<HrOrgApproverMapper, H
     /**
      * 获取信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/13 23:15
      */
     private HrOrgApprover queryHrOrgApprover(HrOrgApproverRequest hrOrgApproverRequest) {
@@ -216,7 +216,7 @@ public class HrOrgApproverServiceImpl extends ServiceImpl<HrOrgApproverMapper, H
     /**
      * 创建查询wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/13 23:15
      */
     private LambdaQueryWrapper<HrOrgApprover> createWrapper(HrOrgApproverRequest hrOrgApproverRequest) {
@@ -238,7 +238,7 @@ public class HrOrgApproverServiceImpl extends ServiceImpl<HrOrgApproverMapper, H
     /**
      * 将approver信息转化为用户详情信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/14 22:58
      */
     private List<BindUserItem> convertUserItem(List<HrOrgApprover> userList) {
@@ -264,6 +264,4 @@ public class HrOrgApproverServiceImpl extends ServiceImpl<HrOrgApproverMapper, H
 
         return new ArrayList<>();
     }
-
-
 }

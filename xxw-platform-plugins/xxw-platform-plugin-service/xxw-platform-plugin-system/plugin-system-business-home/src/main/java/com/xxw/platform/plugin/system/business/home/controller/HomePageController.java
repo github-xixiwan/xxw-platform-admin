@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * 首页控制器
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2022/1/25 9:44
  */
 @RestController
@@ -32,7 +32,7 @@ public class HomePageController {
     /**
      * 查询动态列表
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/1/25 14:52
      */
     @GetResource(name = "查询动态列表", path = "/homePage/getRecentLogs", requiredPermission = false)
@@ -43,7 +43,7 @@ public class HomePageController {
     /**
      * 查询在线用户列表
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/1/25 14:11
      */
     @GetResource(name = "查询在线用户列表", path = "/homePage/getOnlineUserList", requiredPermission = false)
@@ -54,7 +54,7 @@ public class HomePageController {
     /**
      * 获取首页企业和公司信息
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/2/9 10:12
      */
     @GetResource(name = "获取首页企业和公司信息", path = "/homePage/getHomeCompanyInfo", requiredPermission = false)
@@ -65,7 +65,7 @@ public class HomePageController {
     /**
      * 获取常用功能接口
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/2/10 11:34
      */
     @GetResource(name = "获取常用功能接口", path = "/homePage/getCommonFunctions", requiredPermission = false)

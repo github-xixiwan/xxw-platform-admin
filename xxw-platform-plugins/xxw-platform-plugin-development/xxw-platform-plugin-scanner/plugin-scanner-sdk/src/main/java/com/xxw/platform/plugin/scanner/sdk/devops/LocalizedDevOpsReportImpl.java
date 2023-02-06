@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 新的方式向devops平台汇报资源，通过本地化集成devops平台
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/10/18 0:04
  */
 public class LocalizedDevOpsReportImpl implements DevOpsReportApi {

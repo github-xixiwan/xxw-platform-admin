@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 /**
  * 主题开放接口的API
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/10 18:27
  */
 @RestController
@@ -28,7 +28,7 @@ public class SysThemeApiController {
     /**
      * 获取当前Guns管理系统的主题数据
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/10 18:29
      */
     @GetResource(name = "获取当前Guns管理系统的主题数据", path = "/theme/currentThemeInfo", requiredPermission = false, requiredLogin = false)
@@ -36,6 +36,4 @@ public class SysThemeApiController {
         DefaultTheme defaultTheme = sysThemeService.currentThemeInfo(sysThemeParam);
         return new SuccessResponseData<>(defaultTheme);
     }
-
-
 }

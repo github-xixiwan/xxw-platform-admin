@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 数据库连接的api
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/4/22 14:19
  */
 public interface DataSourceApi {
@@ -21,7 +21,7 @@ public interface DataSourceApi {
      * @param dbId 数据库连接id
      * @return 数据库连接信息
      * @throws DatasourceContainerException 找不到对应的dbId会抛出异常
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/4/22 14:21
      */
     DataSourceDto getDataSourceInfoById(Long dbId);
@@ -30,7 +30,7 @@ public interface DataSourceApi {
      * 新增数据库信息
      *
      * @param databaseInfoRequest 新增参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/1 21:47
      */
     void add(DatabaseInfoRequest databaseInfoRequest);
@@ -39,7 +39,7 @@ public interface DataSourceApi {
      * 通过数据源编码删除数据源
      *
      * @param datasourceCode 数据源编码
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/27 10:06
      */
     void deleteByDatasourceCode(String datasourceCode);
@@ -47,7 +47,7 @@ public interface DataSourceApi {
     /**
      * 获取所有数据源连接信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/8/23 14:03
      */
     List<DataBaseInfoDto> getDatasourceList();

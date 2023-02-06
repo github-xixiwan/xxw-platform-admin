@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.organization.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -38,7 +14,7 @@ import java.util.Set;
 /**
  * 系统组织机构服务
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/11/04 11:05
  */
 public interface HrOrganizationService extends IService<HrOrganization>, OrganizationServiceApi {
@@ -47,7 +23,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      * 添加系统组织机构
      *
      * @param hrOrganizationRequest 组织机构请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     void add(HrOrganizationRequest hrOrganizationRequest);
@@ -56,7 +32,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      * 删除系统组织机构
      *
      * @param hrOrganizationRequest 组织机构请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     void del(HrOrganizationRequest hrOrganizationRequest);
@@ -65,7 +41,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      * 编辑系统组织机构
      *
      * @param hrOrganizationRequest 组织机构请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     void edit(HrOrganizationRequest hrOrganizationRequest);
@@ -74,7 +50,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      * 修改组织机构状态
      *
      * @param hrOrganizationRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/18 22:38
      */
     void updateStatus(HrOrganizationRequest hrOrganizationRequest);
@@ -84,7 +60,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      *
      * @param hrOrganizationRequest 组织机构请求参数
      * @return 组织机构详情
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     HrOrganization detail(HrOrganizationRequest hrOrganizationRequest);
@@ -94,7 +70,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      *
      * @param hrOrganizationRequest 组织机构请求参数
      * @return 组织机构详情分页列表
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     PageResult<HrOrganization> findPage(HrOrganizationRequest hrOrganizationRequest);
@@ -104,7 +80,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      *
      * @param hrOrganizationRequest 组织机构请求参数
      * @return 组织机构详情列表
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     List<HrOrganization> findList(HrOrganizationRequest hrOrganizationRequest);
@@ -114,7 +90,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      *
      * @param hrOrganizationRequest 查询参数
      * @return 系统组织机构树
-     * @author chenjinlong
+     * @author liaoxiting
      * @date 2020/11/6 13:41
      */
     List<OrganizationTreeNode> organizationTree(HrOrganizationRequest hrOrganizationRequest);
@@ -125,7 +101,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      * @param hrOrganizationRequest 请求参数
      * @param buildTree             是否构建成树结构的节点，true-带树结构，false-不带
      * @return ztree形式的组织机构树
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/9 18:40
      */
     List<ZTreeNode> orgZTree(HrOrganizationRequest hrOrganizationRequest, boolean buildTree);
@@ -135,7 +111,7 @@ public interface HrOrganizationService extends IService<HrOrganization>, Organiz
      *
      * @param organizationIds 组织架构id集合
      * @return 被查询参数id集合的所有层级父级id，包含他们本身
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/6 14:24
      */
     Set<Long> findAllLevelParentIdsByOrganizations(Set<Long> organizationIds);

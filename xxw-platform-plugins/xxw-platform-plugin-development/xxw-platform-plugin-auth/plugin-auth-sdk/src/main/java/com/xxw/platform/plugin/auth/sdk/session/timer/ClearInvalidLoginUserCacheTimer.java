@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * 定时清除无用的登录用户缓存
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/30 11:19
  */
 public class ClearInvalidLoginUserCacheTimer implements TimerAction {

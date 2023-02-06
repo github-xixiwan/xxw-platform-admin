@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentMap;
  * <p>
  * 维护所有的会话
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/1 下午1:43
  */
 public class SessionCenter {
@@ -27,7 +27,7 @@ public class SessionCenter {
      * 获取维护的所有会话
      *
      * @return {@link ConcurrentMap< String, SocketSession<SocketOperator>>}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午2:13
      **/
     public static ConcurrentMap<String, List<SocketSession<SocketOperator>>> getSocketSessionMap() {
@@ -39,7 +39,7 @@ public class SessionCenter {
      *
      * @param userId 用户ID
      * @return {@link SocketSession <SocketOperator>}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午1:48
      **/
     public static List<SocketSession<SocketOperator>> getSessionByUserId(String userId) {
@@ -51,7 +51,7 @@ public class SessionCenter {
      *
      * @param userId 用户ID
      * @return {@link SocketSession <SocketOperator>}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午1:48
      **/
     public static List<SocketSession<SocketOperator>> getSessionByUserIdAndMsgType(String userId) {
@@ -63,7 +63,7 @@ public class SessionCenter {
      *
      * @param sessionId 会话ID
      * @return {@link SocketSession <SocketOperator>}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午1:48
      **/
     public static SocketSession<SocketOperator> getSessionBySessionId(String sessionId) {
@@ -83,7 +83,7 @@ public class SessionCenter {
      * 设置会话
      *
      * @param socketSession 会话详情
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午1:49
      **/
     public static void addSocketSession(SocketSession<SocketOperator> socketSession) {
@@ -99,7 +99,7 @@ public class SessionCenter {
      * 连接关闭
      *
      * @param sessionId 会话ID
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午3:25
      **/
     public static void closed(String sessionId) {
@@ -115,7 +115,7 @@ public class SessionCenter {
      *
      * @param sessionId 会话ID
      * @return {@link import com.xxw.platform.plugin.socket.api.session.pojo.SocketSession<SocketOperator>}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/8/30 9:20
      **/
     public static SocketSession<SocketOperator> deleteById(String sessionId) {

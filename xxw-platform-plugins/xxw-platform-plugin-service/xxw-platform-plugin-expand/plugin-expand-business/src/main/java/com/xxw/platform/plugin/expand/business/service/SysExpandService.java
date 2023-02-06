@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 业务拓展 服务类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 public interface SysExpandService extends IService<SysExpand>, ExpandApi {
@@ -21,7 +21,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
      * 新增
      *
      * @param sysExpandRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     void add(SysExpandRequest sysExpandRequest);
@@ -30,7 +30,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
      * 删除
      *
      * @param sysExpandRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     void del(SysExpandRequest sysExpandRequest);
@@ -39,7 +39,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
      * 编辑
      *
      * @param sysExpandRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     void edit(SysExpandRequest sysExpandRequest);
@@ -48,7 +48,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
      * 查询详情
      *
      * @param sysExpandRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     SysExpand detail(SysExpandRequest sysExpandRequest);
@@ -58,7 +58,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
      *
      * @param sysExpandRequest 请求参数
      * @return List<SysExpand>   返回结果
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     List<SysExpand> findList(SysExpandRequest sysExpandRequest);
@@ -68,7 +68,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
      *
      * @param sysExpandRequest 请求参数
      * @return PageResult<SysExpand>   返回结果
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     PageResult<SysExpand> findPage(SysExpandRequest sysExpandRequest);
@@ -76,7 +76,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
     /**
      * 修改业务状态
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/3/30 10:37
      */
     void updateStatus(SysExpandRequest sysExpandRequest);
@@ -84,7 +84,7 @@ public interface SysExpandService extends IService<SysExpand>, ExpandApi {
     /**
      * 获取业务元数据信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/3/31 15:26
      */
     SysExpandData getByExpandCode(SysExpandRequest sysExpandRequest);

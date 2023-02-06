@@ -10,7 +10,7 @@ import com.xxw.platform.plugin.jwt.sdk.JwtTokenOperator;
 /**
  * jwt token操作工具的生产工厂
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/1/21 18:15
  */
 public class JwtTokenApiFactory {
@@ -18,7 +18,7 @@ public class JwtTokenApiFactory {
     /**
      * 根据jwt秘钥和过期时间，获取jwt操作的工具
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/21 18:16
      */
     public static JwtApi createJwtApi(String jwtSecret, Integer expiredSeconds) {

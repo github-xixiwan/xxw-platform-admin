@@ -3,7 +3,7 @@ package com.xxw.platform.frame.common.constants;
 /**
  * 租户数据常量，如果租户业务变了这里也需要修改
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/9/24 17:20
  */
 public interface TenantConstants {

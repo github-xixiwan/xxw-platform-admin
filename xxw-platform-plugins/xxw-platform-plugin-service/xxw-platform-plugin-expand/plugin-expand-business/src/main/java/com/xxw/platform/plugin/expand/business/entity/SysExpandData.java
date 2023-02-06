@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 业务拓展-具体数据实例类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @TableName("sys_expand_data")

@@ -14,7 +14,7 @@ import java.util.Set;
  * <p>
  * 枚举类型必须是实现 {@link ReadableEnum}接口的
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/24 18:31
  */
 public class CustomEnumGenericConverter implements GenericConverter {
@@ -22,7 +22,7 @@ public class CustomEnumGenericConverter implements GenericConverter {
     /**
      * 获取可支持的转化类型
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/24 18:34
      */
     @Override
@@ -49,7 +49,7 @@ public class CustomEnumGenericConverter implements GenericConverter {
      * @param sourceType 源类型
      * @param targetType 目标类型
      * @return 被转化后的值
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/24 18:34
      */
     @Override

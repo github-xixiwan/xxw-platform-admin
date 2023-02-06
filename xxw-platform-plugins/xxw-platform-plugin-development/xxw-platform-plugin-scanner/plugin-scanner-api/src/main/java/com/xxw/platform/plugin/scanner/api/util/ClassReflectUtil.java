@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.scanner.api.util;
 
 import cn.hutool.core.bean.BeanUtil;
@@ -40,7 +16,7 @@ import java.util.*;
 /**
  * 类的反射工具
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/12/8 18:23
  */
 public class ClassReflectUtil {
@@ -55,7 +31,7 @@ public class ClassReflectUtil {
      *
      * @param clazz 类的class类型
      * @return 该类下所有字段的描述信息
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/8 18:27
      */
     public static Set<FieldMetadata> getClassFieldDescription(Class<?> clazz) {
@@ -97,7 +73,7 @@ public class ClassReflectUtil {
      *
      * @param declaredField 字段
      * @return {@link FieldMetadata}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/23 上午10:03
      **/
     private static FieldMetadata getFieldMetadata(Field declaredField) {
@@ -118,7 +94,7 @@ public class ClassReflectUtil {
     /**
      * 字段class类解析
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/6 16:09
      **/
     private static void fieldClassParsing(Field declaredField, FieldMetadata fieldDescription, Class<?> declaredFieldType) {
@@ -207,15 +183,13 @@ public class ClassReflectUtil {
             }
         }
     }
-
-
     /**
      * 字段属性填充
      *
      * @param genericFieldMetadataSet 类本身的所有字段信息
      * @param declaredFieldType       类本身
      * @param fieldMetadataSet        类的泛型已解析的信息
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/10 9:46
      **/
     private static void fieldMetadataGenericFill(Set<FieldMetadata> genericFieldMetadataSet, Class<?> declaredFieldType, Set<FieldMetadata> fieldMetadataSet) {
@@ -272,7 +246,7 @@ public class ClassReflectUtil {
     /**
      * 解析所有注解
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/7 18:26
      **/
     private static void parsingAnnotation(Field declaredField, FieldMetadata fieldDescription) {
@@ -306,7 +280,7 @@ public class ClassReflectUtil {
     /**
      * 基础类型解析
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/6 16:09
      **/
     private static FieldMetadata baseTypeParsing(Field declaredField, Class<?> actualTypeArgument) {
@@ -324,7 +298,7 @@ public class ClassReflectUtil {
     /**
      * 调用注解上的某个方法，并获取结果，忽略异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/8 17:13
      */
     public static <T> T invokeAnnotationMethodIgnoreError(Annotation apiResource, String methodName, Class<T> resultType) {
@@ -344,7 +318,7 @@ public class ClassReflectUtil {
      * @param fieldAnnotation     字段上的注解
      * @param validateGroupsClass 校验分组
      * @param groupAnnotations    分组注解集合
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/8 19:12
      */
     public static void addGroupValidateAnnotation(Annotation fieldAnnotation, Class<?> validateGroupsClass, Map<String, Set<String>> groupAnnotations) {
@@ -363,7 +337,7 @@ public class ClassReflectUtil {
      * 例如：
      * NotBlack注解 > NotBlack
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/9 13:39
      */
     public static Set<String> annotationsToStrings(Annotation[] annotations) {
@@ -384,7 +358,7 @@ public class ClassReflectUtil {
      * 判断类是否是基本类型
      *
      * @return {@link boolean}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/7 10:42
      **/
     private static boolean isPrimitive(Class<?> clazz) {
@@ -409,13 +383,11 @@ public class ClassReflectUtil {
         return isPrimitive;
 
     }
-
-
     /**
      * 根据Class创建字段元数据
      *
      * @return {@link FieldMetadata}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2022/1/10 16:11
      **/
     private static FieldMetadata createFieldMetadata(Class<?> typeArgumentItem) {

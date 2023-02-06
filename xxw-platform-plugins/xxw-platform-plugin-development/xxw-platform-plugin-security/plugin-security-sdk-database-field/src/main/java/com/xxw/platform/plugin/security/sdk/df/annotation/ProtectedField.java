@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * <p>
  * 该注解作用范围在字段上面(该类需要加 {@link ProtectedData} 注解)
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/5 9:18
  */
 @Documented

@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 用户组详情实例类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/26 10:12
  */
 @TableName("sys_user_group_detail")

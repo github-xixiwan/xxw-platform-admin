@@ -7,7 +7,7 @@ import com.xxw.platform.frame.common.exception.base.ServiceException;
 /**
  * 业务异常
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @since 2020/12/16 14:26
  */
 public class BusinessException extends ServiceException {

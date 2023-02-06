@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 系统主题模板属性控制器
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 10:28
  */
 @RestController
@@ -34,7 +34,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 增加系统主题模板属性
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 11:22
      */
     @PostResource(name = "增加系统主题模板属性", path = "/sysThemeTemplateField/add")
@@ -47,7 +47,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 删除系统主题模板属性
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 11:25
      */
     @PostResource(name = "删除系统主题模板属性", path = "/sysThemeTemplateField/del")
@@ -60,7 +60,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 修改系统主题模板属性
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 11:38
      */
     @PostResource(name = "修改系统模板属性", path = "/sysThemeTemplateField/edit")
@@ -73,7 +73,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 查询系统主题模板属性详情
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 11:49
      */
     @GetResource(name = "查询系统主题模板属性详情", path = "/sysThemeTemplateField/detail")
@@ -84,7 +84,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 查询系统主题模板属性列表
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/24 9:47
      */
     @GetResource(name = "查询系统主题模板属性列表", path = "/sysThemeTemplateField/findPage")
@@ -95,7 +95,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 查询系统主题模板属性已有关系列表
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/24 14:42
      */
     @GetResource(name = "查询系统主题模板属性已有关系列表", path = "/sysThemeTemplateField/findRelList")
@@ -106,7 +106,7 @@ public class SysThemeTemplateFieldController {
     /**
      * 查询系统主题模板属性未有关系列表
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/24 14:44
      */
     @GetResource(name = "查询系统主题模板属性未有关系列表", path = "/sysThemeTemplateField/findNotRelList")

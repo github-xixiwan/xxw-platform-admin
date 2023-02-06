@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * Socket会话
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/1 上午11:28
  */
 @Data

@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.file.business.controller;
 
 import com.xxw.platform.frame.common.annotation.BusinessLog;
@@ -67,7 +43,7 @@ import java.util.Map;
  * 文件升级不会对之前的数据造成影响
  * 2.UI文件场景：文件升级后业务所有关联的文件全部升级，业务需要关联文件CODE<br>
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2020/12/27 13:39
  */
 @RestController
@@ -87,7 +63,7 @@ public class SysFileInfoController {
      * <p>
      * fileLocation传递其他值或不传值，不能决定文件上传到本地还是阿里云或其他地方
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:17
      */
     @PostResource(name = "上传文件", path = "/sysFileInfo/upload", requiredPermission = false)
@@ -102,7 +78,7 @@ public class SysFileInfoController {
      * //json格式
      * { "location": "folder/sub-folder/new-location.png" }
      *
-     * @author liuhanqing
+     * @author liaoxiting
      * @date 2021/1/17 11:17
      */
     @PostResource(name = "上传文件", path = "/sysFileInfo/tinymceUpload", requiredPermission = false)
@@ -117,7 +93,7 @@ public class SysFileInfoController {
     /**
      * 私有文件预览
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/29 11:29
      */
     @GetResource(name = "私有文件预览", path = FileConstants.FILE_PRIVATE_PREVIEW_URL, requiredPermission = false)
@@ -130,7 +106,7 @@ public class SysFileInfoController {
     /**
      * 公有文件预览
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:17
      */
     @GetResource(name = "公有文件预览", path = FileConstants.FILE_PUBLIC_PREVIEW_URL, requiredPermission = false, requiredLogin = false)
@@ -143,7 +119,7 @@ public class SysFileInfoController {
     /**
      * 通用文件预览，通过传bucket名称和object名称
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/29 11:29
      */
     @GetResource(name = "文件预览，通过bucketName和objectName", path = FileConstants.FILE_PREVIEW_BY_OBJECT_NAME, requiredPermission = false, requiredLogin = false)
@@ -155,7 +131,7 @@ public class SysFileInfoController {
     /**
      * 私有文件下载
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:17
      */
     @GetResource(name = "私有文件下载", path = "/sysFileInfo/privateDownload", requiredPermission = false)
@@ -168,7 +144,7 @@ public class SysFileInfoController {
     /**
      * 公有文件下载
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:17
      */
     @GetResource(name = "公有文件下载", path = "/sysFileInfo/publicDownload", requiredLogin = false, requiredPermission = false)
@@ -183,7 +159,7 @@ public class SysFileInfoController {
      * <p>
      * 注意：调用本接口之后还需要调用确认接口，本次替换操作才会生效
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/16 15:34
      */
     @PostResource(name = "替换文件", path = "/sysFileInfo/update", requiredPermission = false)
@@ -195,7 +171,7 @@ public class SysFileInfoController {
     /**
      * 版本回退
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/16 15:34
      */
     @PostResource(name = "版本回退", path = "/sysFileInfo/versionBack", requiredPermission = false)
@@ -209,7 +185,7 @@ public class SysFileInfoController {
      *
      * @param fileIds 附件IDS
      * @return 附件返回类
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:17
      */
     @GetResource(name = "根据附件IDS查询附件信息", path = "/sysFileInfo/getFileInfoListByFileIds", requiredPermission = false)
@@ -221,7 +197,7 @@ public class SysFileInfoController {
     /**
      * 公有打包下载文件
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:17
      */
     @GetResource(name = "公有打包下载文件", path = "/sysFileInfo/publicPackagingDownload", requiredPermission = false, requiredLogin = false)
@@ -233,7 +209,7 @@ public class SysFileInfoController {
     /**
      * 私有打包下载文件
      *
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/12/27 13:18
      */
     @GetResource(name = "私有打包下载文件", path = "/sysFileInfo/privatePackagingDownload", requiredPermission = false)
@@ -245,7 +221,7 @@ public class SysFileInfoController {
     /**
      * 删除文件信息（真删除文件信息）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/29 11:19
      */
     @PostResource(name = "删除文件信息（真删除文件信息）", path = "/sysFileInfo/deleteReally", requiredPermission = false)
@@ -258,7 +234,7 @@ public class SysFileInfoController {
     /**
      * 分页查询文件信息表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/29 11:29
      */
     @GetResource(name = "分页查询文件信息表", path = "/sysFileInfo/fileInfoListPage", requiredPermission = false)
@@ -269,7 +245,7 @@ public class SysFileInfoController {
     /**
      * 查看详情文件信息表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/29 11:29
      */
     @GetResource(name = "查看详情文件信息表", path = "/sysFileInfo/detail", requiredPermission = false)
@@ -280,7 +256,7 @@ public class SysFileInfoController {
     /**
      * 获取antdv类型的文件详情信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/3/28 14:37
      */
     @GetResource(name = "获取antdv类型的文件详情信息", path = "/sysFileInfo/getAntdVInfo")

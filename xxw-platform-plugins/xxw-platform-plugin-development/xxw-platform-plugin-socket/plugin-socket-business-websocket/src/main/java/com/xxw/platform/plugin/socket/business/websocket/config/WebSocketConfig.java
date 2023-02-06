@@ -7,7 +7,7 @@ import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 /**
  * 开启WebSocket支持
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/21 下午5:01
  */
 @Configuration

@@ -9,7 +9,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 /**
  * RedisTemplate创建工具类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/5/17 16:50
  */
 public class CreateRedisTemplateUtil {
@@ -17,7 +17,7 @@ public class CreateRedisTemplateUtil {
     /**
      * 穿件序列化器
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/17 16:48
      */
     public static RedisSerializer<?> fastJson2JsonRedisSerializer() {
@@ -27,7 +27,7 @@ public class CreateRedisTemplateUtil {
     /**
      * 创建value是object类型的redis操作类
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/17 16:49
      */
     public static <T> RedisTemplate<String, T> createObject(RedisConnectionFactory redisConnectionFactory) {
@@ -44,7 +44,7 @@ public class CreateRedisTemplateUtil {
     /**
      * 创建value是string类型的redis操作类
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/17 16:49
      */
     public static RedisTemplate<String, String> createString(RedisConnectionFactory redisConnectionFactory) {

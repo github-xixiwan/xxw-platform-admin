@@ -21,7 +21,7 @@ import java.util.Set;
 /**
  * 字段的元数据描述
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/14 10:59
  */
 public class FieldDescriptionUtil {
@@ -29,7 +29,7 @@ public class FieldDescriptionUtil {
     /**
      * 创建类内字段的元数据，只组装基本信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/13 18:06
      */
     public static FieldMetadata createBasicMetadata(Field field, String uuid) {
@@ -73,7 +73,7 @@ public class FieldDescriptionUtil {
      * <p>
      * 为何区分两个方法分别组装，因为存在实体中又包含本实体字段的情况，会出现无限递归
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/13 18:06
      */
     public static FieldMetadata createFieldMetadata(Field field, String uuid) {
@@ -89,7 +89,7 @@ public class FieldDescriptionUtil {
     /**
      * 解析字段上的注解
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/14 11:57
      */
     private static void parsingAnnotation(Field declaredField, FieldMetadata fieldDescription) {

@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 资源向DevOps平台汇总，需要进行的配置
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/11 14:29
  */
 @Data

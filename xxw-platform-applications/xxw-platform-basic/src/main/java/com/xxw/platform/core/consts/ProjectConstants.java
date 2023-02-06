@@ -5,7 +5,7 @@ import com.xxw.platform.BasicApplication;
 /**
  * 项目的常量
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @since 2020/12/16 14:28
  */
 public interface ProjectConstants {
@@ -21,7 +21,7 @@ public interface ProjectConstants {
     String BUSINESS_EXCEPTION_STEP_CODE = "100";
 
     /**
-     * 项目的包名，例如cn.stylefeng.guns
+     * 项目的包名
      */
     String ROOT_PACKAGE_NAME = BasicApplication.class.getPackage().getName();
 

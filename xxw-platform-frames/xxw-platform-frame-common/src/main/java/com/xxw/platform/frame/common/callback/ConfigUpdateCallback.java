@@ -3,7 +3,7 @@ package com.xxw.platform.frame.common.callback;
 /**
  * 系统配置修改的回调事件
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/10/22 21:35
  */
 public interface ConfigUpdateCallback {
@@ -13,7 +13,7 @@ public interface ConfigUpdateCallback {
      *
      * @param code  系统配置的编码，例如：SYS_SERVER_DEPLOY_HOST
      * @param value 新修改的配置值
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/10/22 21:36
      */
     void configUpdate(String code, String value);

@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.role.controller;
 
 import com.xxw.platform.frame.common.enums.ResBizTypeEnum;
@@ -45,7 +21,7 @@ import java.util.List;
 /**
  * 系统角色控制器
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2020/11/5 上午10:19
  */
 @RestController
@@ -64,7 +40,7 @@ public class SysRoleAuthController {
     /**
      * 获取角色分配菜单界面，绑定情况列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/28 16:04
      */
     @GetResource(name = "获取角色分配菜单界面，绑定情况列表", path = "/sysMenu/roleBindMenuList")
@@ -76,7 +52,7 @@ public class SysRoleAuthController {
     /**
      * 获取角色分配操作权限，绑定情况列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/28 17:23
      */
     @GetResource(name = "获取角色分配操作权限，绑定情况列表", path = "/sysMenu/roleBindOperateList")
@@ -88,7 +64,7 @@ public class SysRoleAuthController {
     /**
      * 角色权限界面：角色绑定菜单权限
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/28 20:28
      */
     @PostResource(name = "角色权限界面：角色绑定菜单权限", path = "/sysRole/grantRoleMenus")
@@ -99,7 +75,7 @@ public class SysRoleAuthController {
     /**
      * 角色权限界面，角色绑定操作权限
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/29 11:10
      */
     @PostResource(name = "角色权限界面，角色绑定操作权限", path = "/sysRole/grantButton")
@@ -111,7 +87,7 @@ public class SysRoleAuthController {
     /**
      * 角色权限界面：角色绑定菜单权限（全选操作）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/28 20:28
      */
     @PostResource(name = "角色权限界面：角色绑定菜单权限（全选操作）", path = "/sysRole/grantRoleMenus/grantAll")
@@ -122,7 +98,7 @@ public class SysRoleAuthController {
     /**
      * 角色权限界面：角色绑定操作权限（全选操作）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/28 20:28
      */
     @PostResource(name = "角色权限界面：角色绑定操作权限（全选操作）", path = "/sysRole/grantButton/grantAll")
@@ -133,7 +109,7 @@ public class SysRoleAuthController {
     /**
      * 角色绑定接口数据V2
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/8/10 18:23
      */
     @PostResource(name = "角色绑定接口数据V2", path = "/sysRole/grantResourceV2")
@@ -145,7 +121,7 @@ public class SysRoleAuthController {
     /**
      * 角色绑定所有接口数据
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/8/10 18:23
      */
     @PostResource(name = "角色绑定所有接口数据", path = "/sysRole/grantResourceV2/grantAll")

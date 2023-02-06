@@ -1,6 +1,4 @@
 package com.xxw.platform.plugin.security.starter.cache;
-
-
 import com.xxw.platform.plugin.cache.api.CacheOperatorApi;
 import com.xxw.platform.plugin.cache.sdk.redis.util.CreateRedisTemplateUtil;
 import com.xxw.platform.plugin.security.sdk.bw.cache.BlackListRedisCache;
@@ -16,7 +14,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 /**
  * 安全模块，缓存的依赖
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/11/8 9:57
  */
 @Configuration
@@ -26,7 +24,7 @@ public class SecurityRedisCacheAutoConfiguration {
     /**
      * 验证码相关的缓存，Redis缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 20:44
      */
     @Bean("captchaCache")
@@ -39,7 +37,7 @@ public class SecurityRedisCacheAutoConfiguration {
     /**
      * 黑名单的缓存，Redis缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 21:24
      */
     @Bean("blackListCache")
@@ -51,7 +49,7 @@ public class SecurityRedisCacheAutoConfiguration {
     /**
      * 白名单的缓存，Redis缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 21:24
      */
     @Bean("whiteListCache")
@@ -63,7 +61,7 @@ public class SecurityRedisCacheAutoConfiguration {
     /**
      * 计数缓存，Redis缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 21:24
      */
     @Bean("countValidateCache")

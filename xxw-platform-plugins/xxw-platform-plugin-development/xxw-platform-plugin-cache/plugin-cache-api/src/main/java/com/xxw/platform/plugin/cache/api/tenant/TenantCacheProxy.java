@@ -10,7 +10,7 @@ import java.lang.reflect.Proxy;
 /**
  * 租户缓存动态代理
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/11/8 0:45
  */
 @SuppressWarnings("all")
@@ -31,7 +31,7 @@ public class TenantCacheProxy implements InvocationHandler {
      *
      * @param tenantCode 租户编码
      * @param target     被代理的缓存类
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 1:05
      */
     public <T> CacheOperatorApi<T> bindCacheObject(String tenantCode, CacheOperatorApi<T> target) {

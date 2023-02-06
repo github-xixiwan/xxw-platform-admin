@@ -42,7 +42,7 @@ import java.util.List;
 /**
  * 全局异常处理器，拦截控制器层的异常
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @since 2020/12/16 14:20
  */
 @ControllerAdvice
@@ -52,7 +52,7 @@ public class GlobalExceptionHandler {
     /**
      * 请求参数缺失异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 14:20
      */
     @ExceptionHandler(MissingServletRequestParameterException.class)
@@ -67,7 +67,7 @@ public class GlobalExceptionHandler {
     /**
      * HttpMessageConverter转化异常，一般为json解析异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 14:21
      */
     @ExceptionHandler(HttpMessageNotReadableException.class)
@@ -81,7 +81,7 @@ public class GlobalExceptionHandler {
     /**
      * 拦截不支持媒体类型异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 14:26
      */
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
@@ -95,7 +95,7 @@ public class GlobalExceptionHandler {
     /**
      * 不受支持的http method
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 14:56
      */
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
@@ -109,7 +109,7 @@ public class GlobalExceptionHandler {
     /**
      * 404找不到资源
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 14:58
      */
     @ExceptionHandler(NoHandlerFoundException.class)
@@ -122,7 +122,7 @@ public class GlobalExceptionHandler {
     /**
      * 请求参数校验失败，拦截 @Valid 校验失败的情况
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 14:59
      */
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -138,7 +138,7 @@ public class GlobalExceptionHandler {
      * <p>
      * 两个注解 @Valid 和 @Validated 区别是后者可以加分组校验，前者没有分组校验
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 15:08
      */
     @ExceptionHandler(BindException.class)
@@ -152,7 +152,7 @@ public class GlobalExceptionHandler {
     /**
      * 拦截 @TableUniqueValue 里抛出的异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/26 14:05
      */
     @ExceptionHandler(ValidationException.class)
@@ -175,7 +175,7 @@ public class GlobalExceptionHandler {
      * <p>
      * 如果用户登录过期，不是ajax请求，则直接跳转到登录页面，并提示会话超时
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 15:11
      */
     @ExceptionHandler(AuthException.class)
@@ -216,7 +216,7 @@ public class GlobalExceptionHandler {
     /**
      * 拦截业务代码抛出的异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 15:11
      */
     @ExceptionHandler(ServiceException.class)
@@ -232,7 +232,7 @@ public class GlobalExceptionHandler {
      * <p>
      * 用在demo模式，拦截DemoException
      *
-     * @author stylefeng
+     * @author liaoxiting
      * @since 2020/5/5 15:19
      */
     @ExceptionHandler(MyBatisSystemException.class)
@@ -245,7 +245,7 @@ public class GlobalExceptionHandler {
     /**
      * 拦截未知的运行时异常
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/12/16 15:12
      */
     @ExceptionHandler(Throwable.class)
@@ -259,7 +259,7 @@ public class GlobalExceptionHandler {
     /**
      * 渲染异常json
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/5/5 16:22
      */
     private ErrorResponseData<?> renderJson(String code, String message) {
@@ -269,7 +269,7 @@ public class GlobalExceptionHandler {
     /**
      * 渲染异常json
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/5/5 16:22
      */
     private ErrorResponseData<?> renderJson(AbstractExceptionEnum exception, Object... params) {
@@ -279,7 +279,7 @@ public class GlobalExceptionHandler {
     /**
      * 渲染异常json
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/5/5 16:22
      */
     private ErrorResponseData<?> renderJson(AbstractExceptionEnum abstractExceptionEnum) {
@@ -289,7 +289,7 @@ public class GlobalExceptionHandler {
     /**
      * 渲染异常json
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2020/5/5 16:22
      */
     private ErrorResponseData<?> renderJson(Throwable throwable) {
@@ -301,7 +301,7 @@ public class GlobalExceptionHandler {
      * <p>
      * 根据异常枚举和Throwable异常响应，异常信息响应堆栈第一行
      *
-     * @author stylefeng
+     * @author liaoxiting
      * @since 2020/5/5 16:22
      */
     private ErrorResponseData<?> renderJson(String code, String message, Throwable throwable) {
@@ -319,7 +319,7 @@ public class GlobalExceptionHandler {
      * <p>
      * 多个信息，拼接成用逗号分隔的形式
      *
-     * @author stylefeng
+     * @author liaoxiting
      * @since 2020/5/5 16:50
      */
     private String getArgNotValidMessage(BindingResult bindingResult) {
@@ -345,7 +345,7 @@ public class GlobalExceptionHandler {
      * <p>
      * 第二种，如果是前后端分离项目，则渲染Json结果
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @since 2021/5/18 10:48
      */
     private String renderLoginResult(HttpServletResponse response, AuthException authException, Model model) {

@@ -7,7 +7,7 @@ import lombok.Getter;
 /**
  * 用户组异常相关枚举
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/26 10:12
  */
 @Getter

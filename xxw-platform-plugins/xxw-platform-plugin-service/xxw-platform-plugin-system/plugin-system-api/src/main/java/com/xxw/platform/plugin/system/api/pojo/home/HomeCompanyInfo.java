@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 首页系统企业或公司信息封装
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2022/1/25 15:06
  */
 @Data

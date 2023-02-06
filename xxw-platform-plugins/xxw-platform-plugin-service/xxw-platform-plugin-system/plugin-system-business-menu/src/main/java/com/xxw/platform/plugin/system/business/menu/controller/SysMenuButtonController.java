@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.menu.controller;
 
 import com.xxw.platform.frame.common.annotation.BusinessLog;
@@ -44,7 +20,7 @@ import javax.annotation.Resource;
 /**
  * 系统菜单按钮控制器
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/1/9 16:08
  */
 @RestController
@@ -58,7 +34,7 @@ public class SysMenuButtonController {
      * 添加系统菜单按钮
      *
      * @param sysMenuButtonRequest 菜单按钮请求参数
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/1/9 11:28
      */
     @PostResource(name = "添加系统菜单按钮", path = "/sysMenuButton/add")
@@ -71,7 +47,7 @@ public class SysMenuButtonController {
     /**
      * 添加系统菜单按钮-默认按钮
      *
-     * @author chenjinlong
+     * @author liaoxiting
      * @date 2021/1/9 11:28
      */
     @PostResource(name = "添加系统默认菜单按钮", path = "/sysMenuButton/addSystemDefaultButton")
@@ -85,7 +61,7 @@ public class SysMenuButtonController {
      * 删除单个系统菜单按钮
      *
      * @param sysMenuButtonRequest 菜单按钮id
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/1/9 12:14
      */
     @PostResource(name = "删除单个系统菜单按钮", path = "/sysMenuButton/delete")
@@ -99,7 +75,7 @@ public class SysMenuButtonController {
      * 批量删除多个系统菜单按钮
      *
      * @param sysMenuButtonRequest 菜单按钮id集合
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/1/9 12:27
      */
     @PostResource(name = "批量删除多个系统菜单按钮", path = "/sysMenuButton/batchDelete")
@@ -113,7 +89,7 @@ public class SysMenuButtonController {
      * 编辑系统菜单按钮
      *
      * @param sysMenuButtonRequest 菜单按钮请求参数
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/1/9 12:00
      */
     @PostResource(name = "编辑系统菜单按钮", path = "/sysMenuButton/edit")
@@ -127,7 +103,7 @@ public class SysMenuButtonController {
      * 获取菜单按钮详情
      *
      * @param sysMenuButtonRequest 菜单按钮id
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/1/9 11:53
      */
     @GetResource(name = "获取菜单按钮详情", path = "/sysMenuButton/detail")
@@ -140,7 +116,7 @@ public class SysMenuButtonController {
      * 获取菜单按钮列表
      *
      * @param sysMenuButtonRequest 菜单id
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/1/9 12:33
      */
     @GetResource(name = "获取菜单按钮列表", path = "/sysMenuButton/pageList")

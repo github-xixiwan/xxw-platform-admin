@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 获取当前登录用户的相关方法
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/9/28 17:46
  */
 public class CommonLoginUserUtil {
@@ -20,7 +20,7 @@ public class CommonLoginUserUtil {
     /**
      * 获取当前登录用户Token
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/9/28 17:46
      */
     public static String getToken() {

@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 用户组详情封装类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/26 10:12
  */
 @EqualsAndHashCode(callSuper = true)

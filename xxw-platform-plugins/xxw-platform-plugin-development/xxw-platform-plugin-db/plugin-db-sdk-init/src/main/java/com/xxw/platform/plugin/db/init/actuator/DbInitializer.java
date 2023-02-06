@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.db.init.actuator;
 
 import cn.hutool.core.util.ClassUtil;
@@ -44,12 +20,10 @@ import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-
-
 /**
  * 数据库初始化，可初始化表，校验字段，校验表名是否存在等
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2018-07-29 22:05
  */
 @Slf4j
@@ -77,7 +51,7 @@ public abstract class DbInitializer {
     /**
      * 初始化数据库
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2018/7/30 上午10:30
      */
     public void dbInit() {
@@ -92,7 +66,7 @@ public abstract class DbInitializer {
     /**
      * 初始化表结构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2018/7/30 上午10:24
      */
     private void initTable() {
@@ -127,7 +101,7 @@ public abstract class DbInitializer {
     /**
      * 校验实体和对应表结构是否有不一致的
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2018/7/30 上午10:24
      */
     private void fieldsValidate() {
@@ -161,7 +135,7 @@ public abstract class DbInitializer {
     /**
      * 反射获取类的所有字段
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2018/7/30 上午10:06
      */
     private List<String> getClassFields() {
@@ -186,7 +160,7 @@ public abstract class DbInitializer {
     /**
      * 获取表的初始化语句
      *
-     * @author stylefeng
+     * @author liaoxiting
      * @date 2018/7/29 22:10
      */
     protected abstract String getTableInitSql();
@@ -194,7 +168,7 @@ public abstract class DbInitializer {
     /**
      * 获取表的名称
      *
-     * @author stylefeng
+     * @author liaoxiting
      * @date 2018/7/29 22:10
      */
     protected abstract String getTableName();
@@ -202,7 +176,7 @@ public abstract class DbInitializer {
     /**
      * 获取表对应的实体
      *
-     * @author stylefeng
+     * @author liaoxiting
      * @date 2018/7/29 22:49
      */
     protected abstract Class<?> getEntityClass();

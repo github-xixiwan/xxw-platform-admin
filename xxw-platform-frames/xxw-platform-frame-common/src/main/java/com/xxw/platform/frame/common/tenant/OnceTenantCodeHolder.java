@@ -5,7 +5,7 @@ package com.xxw.platform.frame.common.tenant;
  * <p>
  * 一次性使用，使用完就立即释放
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/11/8 0:58
  */
 public class OnceTenantCodeHolder {
@@ -15,7 +15,7 @@ public class OnceTenantCodeHolder {
     /**
      * 设置租户编码
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 0:59
      */
     public static void setTenantCode(String aesKey) {
@@ -25,7 +25,7 @@ public class OnceTenantCodeHolder {
     /**
      * 获取租户编码
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 0:59
      */
     public static String getTenantCode() {
@@ -35,7 +35,7 @@ public class OnceTenantCodeHolder {
     /**
      * 清除租户编码
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 0:59
      */
     public static void clearTenantCode() {

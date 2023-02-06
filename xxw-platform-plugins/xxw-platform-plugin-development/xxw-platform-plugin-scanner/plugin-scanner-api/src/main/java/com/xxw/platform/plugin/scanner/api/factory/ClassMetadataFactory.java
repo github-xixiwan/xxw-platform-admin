@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * 字段信息创建工具，一般用这个类作为类解析的入口
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/13 13:49
  */
 @Slf4j
@@ -25,7 +25,7 @@ public class ClassMetadataFactory {
      * @param type 需要被解析的对象的类型，可以是class也可以是泛型
      * @param uuid 随机字符串，保证唯一性，用来标识从开始到结束一个context周期内的一系列解析
      * @return 传入类型的字段元数据信息
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/13 13:51
      */
     public static FieldMetadata beginCreateFieldMetadata(Type type, String uuid) {

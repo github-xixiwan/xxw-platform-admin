@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 用户组详情 服务类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/26 10:12
  */
 public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> {
@@ -19,7 +19,7 @@ public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> 
      * 新增
      *
      * @param sysUserGroupDetailRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     void add(SysUserGroupDetailRequest sysUserGroupDetailRequest);
@@ -28,7 +28,7 @@ public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> 
      * 删除
      *
      * @param sysUserGroupDetailRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     void del(SysUserGroupDetailRequest sysUserGroupDetailRequest);
@@ -37,7 +37,7 @@ public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> 
      * 编辑
      *
      * @param sysUserGroupDetailRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     void edit(SysUserGroupDetailRequest sysUserGroupDetailRequest);
@@ -46,7 +46,7 @@ public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> 
      * 查询详情
      *
      * @param sysUserGroupDetailRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     SysUserGroupDetail detail(SysUserGroupDetailRequest sysUserGroupDetailRequest);
@@ -56,7 +56,7 @@ public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> 
      *
      * @param sysUserGroupDetailRequest        请求参数
      * @return List<SysUserGroupDetail>   返回结果
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     List<SysUserGroupDetail> findList(SysUserGroupDetailRequest sysUserGroupDetailRequest);
@@ -66,7 +66,7 @@ public interface SysUserGroupDetailService extends IService<SysUserGroupDetail> 
      *
      * @param sysUserGroupDetailRequest              请求参数
      * @return PageResult<SysUserGroupDetail>   返回结果
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     PageResult<SysUserGroupDetail> findPage(SysUserGroupDetailRequest sysUserGroupDetailRequest);

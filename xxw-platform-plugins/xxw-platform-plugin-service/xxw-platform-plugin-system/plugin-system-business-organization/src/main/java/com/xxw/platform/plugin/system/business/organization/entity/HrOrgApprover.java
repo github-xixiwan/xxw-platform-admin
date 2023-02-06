@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * 组织机构审批人实例类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/13 23:15
  */
 @TableName("hr_org_approver")

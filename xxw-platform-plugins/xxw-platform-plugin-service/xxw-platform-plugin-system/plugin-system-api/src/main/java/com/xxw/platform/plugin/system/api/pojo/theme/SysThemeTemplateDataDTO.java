@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 系统主题模板详细查询返回的数据封装
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 15:20
  */
 @Data

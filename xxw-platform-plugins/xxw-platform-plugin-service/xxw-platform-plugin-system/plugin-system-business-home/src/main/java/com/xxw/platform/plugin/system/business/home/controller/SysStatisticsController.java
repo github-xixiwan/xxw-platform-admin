@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 常用功能的统计次数控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/02/10 21:17
  */
 @RestController
@@ -33,7 +33,7 @@ public class SysStatisticsController {
     /**
      * 添加
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/02/10 21:17
      */
     @PostResource(name = "添加", path = "/sysStatisticsCount/add")
@@ -45,7 +45,7 @@ public class SysStatisticsController {
     /**
      * 删除
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/02/10 21:17
      */
     @PostResource(name = "删除", path = "/sysStatisticsCount/delete")
@@ -57,7 +57,7 @@ public class SysStatisticsController {
     /**
      * 编辑
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/02/10 21:17
      */
     @PostResource(name = "编辑", path = "/sysStatisticsCount/edit")
@@ -69,7 +69,7 @@ public class SysStatisticsController {
     /**
      * 查看详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/02/10 21:17
      */
     @GetResource(name = "查看详情", path = "/sysStatisticsCount/detail")
@@ -80,7 +80,7 @@ public class SysStatisticsController {
     /**
      * 获取列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/02/10 21:17
      */
     @GetResource(name = "获取列表", path = "/sysStatisticsCount/list")
@@ -91,7 +91,7 @@ public class SysStatisticsController {
     /**
      * 获取列表（带分页）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/02/10 21:17
      */
     @GetResource(name = "分页查询", path = "/sysStatisticsCount/page")

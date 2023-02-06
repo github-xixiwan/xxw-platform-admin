@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Pgsql数据库的系统配置表获取
  *
- * @author AndrewFeng
+ * @author liaoxiting
  * @date 2021/5/14 21:18
  */
 @Slf4j

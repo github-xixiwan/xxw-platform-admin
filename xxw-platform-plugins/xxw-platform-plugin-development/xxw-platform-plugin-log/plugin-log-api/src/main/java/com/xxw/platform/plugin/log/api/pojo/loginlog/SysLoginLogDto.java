@@ -6,12 +6,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.Date;
-
-
 /**
  * 登录日志的dto
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/30 20:51
  */
 @Data

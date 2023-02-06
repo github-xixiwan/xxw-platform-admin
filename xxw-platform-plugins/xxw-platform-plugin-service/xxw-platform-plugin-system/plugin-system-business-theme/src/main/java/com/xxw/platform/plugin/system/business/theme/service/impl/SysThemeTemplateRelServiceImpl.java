@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * 系统主题模板属性关系service接口实现类
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 16:14
  */
 @Service
@@ -57,7 +57,7 @@ public class SysThemeTemplateRelServiceImpl extends ServiceImpl<SysThemeTemplate
     /**
      * 校验模板使用状态
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/30 17:28
      */
     private void checkTemplateStatus(SysThemeTemplateRelRequest sysThemeTemplateRelRequest) {

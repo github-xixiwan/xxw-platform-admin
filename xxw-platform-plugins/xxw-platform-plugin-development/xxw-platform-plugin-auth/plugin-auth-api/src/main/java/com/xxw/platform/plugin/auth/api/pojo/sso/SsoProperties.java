@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * SSO的配置
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/5/25 22:28
  */
 @Data

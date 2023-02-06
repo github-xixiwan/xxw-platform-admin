@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.user.controller;
 
 import cn.hutool.core.util.StrUtil;
@@ -57,7 +33,7 @@ import javax.validation.Valid;
 /**
  * 登录登出控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/17 17:23
  */
 @RestController
@@ -80,7 +56,7 @@ public class LoginController {
     /**
      * 用户登陆
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/17 17:23
      */
     @PostResource(name = "登陆", path = "/login", requiredLogin = false, requiredPermission = false)
@@ -93,7 +69,7 @@ public class LoginController {
     /**
      * 用户登陆(提供给分离版用的接口，不会写cookie)
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/17 17:23
      */
     @PostResource(name = "登陆（分离版）", path = "/loginApi", requiredLogin = false, requiredPermission = false)
@@ -106,7 +82,7 @@ public class LoginController {
     /**
      * 基于token登录，适用于单点登录，将caToken请求过来，进行解析，并创建本系统可以识别的token
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:36
      */
     @PostResource(name = "适用于单点登录", path = "/loginWithToken", requiredLogin = false, requiredPermission = false)
@@ -119,7 +95,7 @@ public class LoginController {
      * 单点退出，基于CaClientToken的单点退出
      *
      * @param caClientToken token是单点登录回调本系统时候的token
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/17 17:24
      */
     @ApiResource(name = "单点退出", path = "/logoutByCaClientToken", resBizType = ResBizTypeEnum.SYSTEM,
@@ -141,7 +117,7 @@ public class LoginController {
     /**
      * 用户登出
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/17 17:24
      */
     @ApiResource(name = "登出", path = "/logoutAction", resBizType = ResBizTypeEnum.SYSTEM,
@@ -154,7 +130,7 @@ public class LoginController {
     /**
      * 获取当前用户的用户信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/17 17:37
      */
     @GetResource(name = "获取当前用户的用户信息", path = "/getCurrentLoginUserInfo", requiredPermission = false)
@@ -170,7 +146,7 @@ public class LoginController {
     /**
      * 校验token是否正确
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/6/18 15:26
      */
     @PostResource(name = "校验token是否正确", path = "/validateToken", requiredPermission = false, requiredLogin = false)
@@ -182,7 +158,7 @@ public class LoginController {
     /**
      * 取消帐号冻结
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/1/22 16:40
      */
     @PostResource(name = "取消帐号冻结", path = "/cancelFreeze")
@@ -194,7 +170,7 @@ public class LoginController {
     /**
      * 新版Antdv3版本的用户信息获取
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/4/8 15:31
      */
     @GetResource(name = "新版Antdv3版本的用户信息获取", path = "/v3/userInfo", requiredPermission = false)

@@ -8,7 +8,7 @@ import com.xxw.platform.plugin.socket.api.message.SocketMsgCallbackInterface;
  * <p>
  * 可通过该类直接发送消息，每一个Socket实现的子模块必须实现该接口，以提供统一的操作API
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/2 上午9:25
  */
 public interface SocketOperatorApi {
@@ -19,7 +19,7 @@ public interface SocketOperatorApi {
      * @param msgType   消息类型可参考{@link import com.xxw.platform.plugin.socket.api.enums}枚举类
      * @param sessionId 会话ID
      * @param msg       消息体
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/11 下午2:19
      **/
     void sendMsgOfUserSessionBySessionId(String msgType, String sessionId, Object msg) throws SocketException;
@@ -32,7 +32,7 @@ public interface SocketOperatorApi {
      * @param msgType 消息类型可参考{@link import com.xxw.platform.plugin.socket.api.enums}枚举类
      * @param userId  用户ID
      * @param msg     消息体
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/2 上午9:35
      **/
     void sendMsgOfUserSession(String msgType, String userId, Object msg) throws SocketException;
@@ -42,7 +42,7 @@ public interface SocketOperatorApi {
      *
      * @param msgType 消息类型可参考{@link import com.xxw.platform.plugin.socket.api.enums}枚举类
      * @param msg     消息体
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/2 上午9:35
      **/
     void sendMsgOfAllUserSession(String msgType, Object msg);
@@ -51,7 +51,7 @@ public interface SocketOperatorApi {
      * 根据会话id关闭会话
      *
      * @param socketId 会话id
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/8/13 16:00
      **/
     void closeSocketBySocketId(String socketId);
@@ -63,7 +63,7 @@ public interface SocketOperatorApi {
      *
      * @param msgType           消息类型可参考{@link import com.xxw.platform.plugin.socket.api.enums}枚举类
      * @param callbackInterface 消息监听器
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/2 上午9:54
      **/
     void msgTypeCallback(String msgType, SocketMsgCallbackInterface callbackInterface);

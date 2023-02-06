@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 系统配置元数据获取的api
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/27 21:15
  */
 public interface SysConfigDataApi {
@@ -19,7 +19,7 @@ public interface SysConfigDataApi {
      *
      * @param conn 原始数据库连接
      * @return 所有记录的list
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/27 21:15
      */
     List<Entity> getConfigs(Connection conn) throws SQLException;
@@ -27,7 +27,7 @@ public interface SysConfigDataApi {
     /**
      * 获取所有配置list的sql
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/27 21:19
      */
     String getConfigListSql();

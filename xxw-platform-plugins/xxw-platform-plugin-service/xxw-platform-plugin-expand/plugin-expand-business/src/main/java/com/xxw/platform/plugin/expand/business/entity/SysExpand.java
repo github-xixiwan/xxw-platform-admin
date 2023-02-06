@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 业务拓展实例类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @TableName("sys_expand")
@@ -68,6 +68,4 @@ public class SysExpand extends BaseEntity {
     @TableField("primary_field_camel")
     @ChineseDescription("业务主键id字段名驼峰法，例如：userId")
     private String primaryFieldCamel;
-
-
 }

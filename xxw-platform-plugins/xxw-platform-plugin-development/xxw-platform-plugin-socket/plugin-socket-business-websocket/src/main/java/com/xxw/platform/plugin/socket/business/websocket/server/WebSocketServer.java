@@ -24,7 +24,7 @@ import java.io.IOException;
 /**
  * 消息监听处理器
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/1 下午2:35
  */
 @Slf4j
@@ -38,7 +38,7 @@ public class WebSocketServer {
      * 暂时无用，需要在建立连接的时候做一些事情的话可以修改这里
      *
      * @param session 会话信息
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/21 下午5:14
      **/
     @OnOpen
@@ -95,7 +95,7 @@ public class WebSocketServer {
      * 连接关闭调用的方法
      *
      * @param session 会话信息
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/21 下午5:14
      **/
     @OnClose
@@ -118,7 +118,7 @@ public class WebSocketServer {
      *
      * @param message       　接收到的消息
      * @param socketChannel 会话信息
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/21 下午5:14
      **/
     @OnMessage
@@ -166,7 +166,7 @@ public class WebSocketServer {
      *
      * @param session 会话信息
      * @param error   　错误信息
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/21 下午5:14
      **/
     @OnError

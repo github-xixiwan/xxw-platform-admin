@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * 去除druid底部广告
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/3/15 16:40
  */
 @Configuration
@@ -23,7 +23,7 @@ public class RemoveDruidAdAutoConfiguration {
     /**
      * 除去页面底部的广告
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/1/24 15:23
      */
     @Bean

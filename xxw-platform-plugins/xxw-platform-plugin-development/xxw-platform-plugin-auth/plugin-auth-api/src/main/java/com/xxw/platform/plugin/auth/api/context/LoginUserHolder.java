@@ -5,7 +5,7 @@ import com.xxw.platform.plugin.auth.api.pojo.login.LoginUser;
 /**
  * 当前登录用户的临时保存容器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/3/23 17:38
  */
 public class LoginUserHolder {
@@ -15,7 +15,7 @@ public class LoginUserHolder {
     /**
      * set holder中内容
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/23 17:41
      */
     public static void set(LoginUser abstractLoginUser) {
@@ -25,7 +25,7 @@ public class LoginUserHolder {
     /**
      * 获取holder中的值
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/23 17:41
      */
     public static LoginUser get() {
@@ -35,7 +35,7 @@ public class LoginUserHolder {
     /**
      * 删除保存的用户
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/23 17:42
      */
     public static void remove() {

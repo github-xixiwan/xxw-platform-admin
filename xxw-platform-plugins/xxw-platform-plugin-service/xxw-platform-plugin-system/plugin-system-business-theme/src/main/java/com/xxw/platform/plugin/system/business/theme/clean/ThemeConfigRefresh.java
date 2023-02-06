@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 /**
  * 系统初始化之后的主题资源刷新
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/2/26 12:55
  */
 @Component

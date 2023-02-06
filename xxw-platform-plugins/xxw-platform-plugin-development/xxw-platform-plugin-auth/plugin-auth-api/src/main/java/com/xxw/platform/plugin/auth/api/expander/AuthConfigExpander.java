@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.auth.api.expander;
 
 import cn.hutool.core.util.RandomUtil;
@@ -35,7 +11,7 @@ import java.util.List;
 /**
  * 权限相关配置快速获取
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/17 16:10
  */
 public class AuthConfigExpander {
@@ -43,7 +19,7 @@ public class AuthConfigExpander {
     /**
      * 获取不被权限控制的url
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/17 16:12
      */
     public static List<String> getNoneSecurityConfig() {
@@ -58,7 +34,7 @@ public class AuthConfigExpander {
     /**
      * 用于auth校验的jwt的秘钥
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/2 18:52
      */
     public static String getAuthJwtSecret() {
@@ -79,7 +55,7 @@ public class AuthConfigExpander {
      * <p>
      * 如果登录的时候开启了“记住我”，则用户7天内免登录
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/2 18:53
      */
     public static Long getAuthJwtTimeoutSeconds() {
@@ -93,7 +69,7 @@ public class AuthConfigExpander {
      * <p>
      * 如果开启了记住我功能，在session过期后会从新创建session
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/20 9:32
      */
     public static Long getSessionExpiredSeconds() {
@@ -106,7 +82,7 @@ public class AuthConfigExpander {
      * 单账号单端登录为限制一个账号多个浏览器登录
      *
      * @return true-开启单端限制，false-关闭单端限制
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/21 14:31
      */
     public static boolean getSingleAccountLoginFlag() {
@@ -116,7 +92,7 @@ public class AuthConfigExpander {
     /**
      * 获取携带token的header头的名称
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/22 14:11
      */
     public static String getAuthTokenHeaderName() {
@@ -126,7 +102,7 @@ public class AuthConfigExpander {
     /**
      * 获取携带token的param传参的名称
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/22 14:11
      */
     public static String getAuthTokenParamName() {
@@ -136,7 +112,7 @@ public class AuthConfigExpander {
     /**
      * 会话保存在cookie中时，cooke的name
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/27 13:18
      */
     public static String getSessionCookieName() {
@@ -146,7 +122,7 @@ public class AuthConfigExpander {
     /**
      * 默认解析jwt的秘钥（用于解析sso传过来的token）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static String getSsoJwtSecret() {
@@ -156,7 +132,7 @@ public class AuthConfigExpander {
     /**
      * 默认解析sso加密的数据的秘钥
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static String getSsoDataDecryptSecret() {
@@ -167,7 +143,7 @@ public class AuthConfigExpander {
      * 获取是否开启sso远程会话校验，当系统对接sso后，如需同时校验sso的会话是否存在则开启此开关
      *
      * @return true-开启远程校验，false-关闭远程校验
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static Boolean getSsoSessionValidateSwitch() {
@@ -177,7 +153,7 @@ public class AuthConfigExpander {
     /**
      * sso会话远程校验，redis的host
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static String getSsoSessionValidateRedisHost() {
@@ -187,7 +163,7 @@ public class AuthConfigExpander {
     /**
      * sso会话远程校验，redis的端口
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static Integer getSsoSessionValidateRedisPort() {
@@ -197,7 +173,7 @@ public class AuthConfigExpander {
     /**
      * sso会话远程校验，redis的密码
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static String getSsoSessionValidateRedisPassword() {
@@ -207,7 +183,7 @@ public class AuthConfigExpander {
     /**
      * sso会话远程校验，redis的db
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static Integer getSsoSessionValidateRedisDbIndex() {
@@ -217,7 +193,7 @@ public class AuthConfigExpander {
     /**
      * sso会话远程校验，redis的缓存前缀
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static String getSsoSessionValidateRedisCachePrefix() {
@@ -227,7 +203,7 @@ public class AuthConfigExpander {
     /**
      * 获取SSO服务器的地址
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/25 22:39
      */
     public static String getSsoUrl() {
@@ -239,7 +215,7 @@ public class AuthConfigExpander {
      * <p>
      * 需要前端配合加密后再打开开关
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/10/16 23:28
      */
     public static Boolean getPasswordRsaValidateFlag() {

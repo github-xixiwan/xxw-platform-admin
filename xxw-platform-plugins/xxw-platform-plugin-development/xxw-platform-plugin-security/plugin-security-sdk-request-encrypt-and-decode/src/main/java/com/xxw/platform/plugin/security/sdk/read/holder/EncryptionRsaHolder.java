@@ -6,7 +6,7 @@ import com.xxw.platform.plugin.security.sdk.read.constants.EncryptionConstants;
 /**
  * 用于存储RSA实例
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/6/4 08:58
  */
 public class EncryptionRsaHolder {

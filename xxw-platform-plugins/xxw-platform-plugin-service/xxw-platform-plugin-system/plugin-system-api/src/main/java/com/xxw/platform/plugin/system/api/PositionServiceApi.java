@@ -15,7 +15,7 @@ public interface PositionServiceApi {
     /**
      * 查询职位总数
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2022/2/9 9:37
      */
     Integer positionNum();
@@ -31,7 +31,7 @@ public interface PositionServiceApi {
     /**
      * 获取职位详情列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/10/31 20:33
      */
     List<HrPositionDTO> getPositionDetailList(List<Long> positionIdList);

@@ -7,7 +7,7 @@ import lombok.Getter;
  * <p>
  * 说明：该枚举适用于服务器接收到客户端发来的消息，判断消息类型时使用
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/3 上午9:14
  */
 @Getter

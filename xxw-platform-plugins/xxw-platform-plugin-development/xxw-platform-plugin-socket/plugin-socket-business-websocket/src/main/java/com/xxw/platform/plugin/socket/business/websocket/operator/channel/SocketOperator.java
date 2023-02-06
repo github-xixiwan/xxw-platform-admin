@@ -10,7 +10,7 @@ import java.io.IOException;
  * <p>
  * 简单封装Spring Boot的默认WebSocket
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/1 下午3:41
  */
 public class SocketOperator implements SocketChannelExpandInterFace {

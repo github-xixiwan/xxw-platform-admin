@@ -13,7 +13,7 @@ import java.lang.reflect.ParameterizedType;
 /**
  * 类的元数据描述
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/14 10:59
  */
 public class ClassDescriptionUtil {
@@ -21,7 +21,7 @@ public class ClassDescriptionUtil {
     /**
      * 创建针对类的基础描述
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/13 18:06
      */
     public static FieldMetadata createClassMetadata(Class<?> clazz, FieldTypeEnum fieldTypeEnum, String uuid) {
@@ -55,7 +55,7 @@ public class ClassDescriptionUtil {
     /**
      * 创建针对类的基础描述
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/13 18:06
      */
     public static FieldMetadata createParameterizedMetadata(ParameterizedType parameterizedType, FieldTypeEnum fieldTypeEnum, String uuid) {

@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * 运维平台资源汇报过程
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/4/2 14:38
  */
 public class DefaultDevOpsReportImpl implements DevOpsReportApi {

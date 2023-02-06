@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 初始化参数响应
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/10/24 14:59
  */
 @Data

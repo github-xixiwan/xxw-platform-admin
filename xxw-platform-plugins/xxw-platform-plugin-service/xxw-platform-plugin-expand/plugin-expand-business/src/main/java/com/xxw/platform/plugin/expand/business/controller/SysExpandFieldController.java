@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 业务拓展-字段信息控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @RestController
@@ -33,7 +33,7 @@ public class SysExpandFieldController {
     /**
      * 添加
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "添加", path = "/sysExpandField/add")
@@ -45,7 +45,7 @@ public class SysExpandFieldController {
     /**
      * 删除
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "删除", path = "/sysExpandField/delete")
@@ -57,7 +57,7 @@ public class SysExpandFieldController {
     /**
      * 编辑
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "编辑", path = "/sysExpandField/edit")
@@ -69,7 +69,7 @@ public class SysExpandFieldController {
     /**
      * 查看详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "查看详情", path = "/sysExpandField/detail")
@@ -80,7 +80,7 @@ public class SysExpandFieldController {
     /**
      * 获取列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "获取列表", path = "/sysExpandField/list")
@@ -91,7 +91,7 @@ public class SysExpandFieldController {
     /**
      * 获取列表（带分页）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "分页查询", path = "/sysExpandField/page")

@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 第三方OAuth2用户信息
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/7/1 18:05
  */
 @Data

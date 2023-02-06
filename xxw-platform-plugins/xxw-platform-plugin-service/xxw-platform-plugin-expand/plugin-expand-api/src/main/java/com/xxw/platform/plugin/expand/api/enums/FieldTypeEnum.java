@@ -5,7 +5,7 @@ import lombok.Getter;
 /**
  * 字段类型枚举
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/4/1 10:34
  */
 @Getter

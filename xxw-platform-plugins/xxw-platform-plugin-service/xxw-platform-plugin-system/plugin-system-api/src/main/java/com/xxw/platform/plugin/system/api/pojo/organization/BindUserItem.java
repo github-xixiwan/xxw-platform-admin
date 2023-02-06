@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 绑定用户信息详情（用在部门审批人绑定用户）
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/13 23:47
  */
 @Data

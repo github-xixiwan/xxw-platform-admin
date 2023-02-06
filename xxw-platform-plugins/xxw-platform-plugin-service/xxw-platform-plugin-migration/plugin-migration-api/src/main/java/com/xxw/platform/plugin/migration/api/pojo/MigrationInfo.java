@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 迁移数据信息
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/6 16:30
  */
 @Data

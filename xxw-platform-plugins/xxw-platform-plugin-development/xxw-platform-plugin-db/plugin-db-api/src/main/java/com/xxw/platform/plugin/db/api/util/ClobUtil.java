@@ -7,7 +7,7 @@ import java.sql.Clob;
 /**
  * oracle数据库转化工具
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/5/19 10:33
  */
 public class ClobUtil {
@@ -15,7 +15,7 @@ public class ClobUtil {
     /**
      * Clob类型转换成String类型
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/5/19 10:33
      */
     public static String clobToString(final Clob clob) {
@@ -36,8 +36,6 @@ public class ClobUtil {
         }
 
         BufferedReader br = new BufferedReader(reader);
-
-
         String str = null;
 
         // 读取第一行

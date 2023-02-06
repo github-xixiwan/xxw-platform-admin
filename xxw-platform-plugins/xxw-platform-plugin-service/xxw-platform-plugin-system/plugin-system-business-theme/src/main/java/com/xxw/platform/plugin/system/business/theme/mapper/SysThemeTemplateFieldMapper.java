@@ -6,7 +6,7 @@ import com.xxw.platform.plugin.system.business.theme.entity.SysThemeTemplateFiel
 /**
  * 系统主题模板属性mapper接口
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 10:14
  */
 public interface SysThemeTemplateFieldMapper extends BaseMapper<SysThemeTemplateField> {

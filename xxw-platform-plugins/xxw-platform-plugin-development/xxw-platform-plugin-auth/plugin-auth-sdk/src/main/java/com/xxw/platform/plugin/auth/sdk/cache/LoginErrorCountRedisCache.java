@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * <p>
  * key是用户账号，value是登录失败错误次数
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/3/15 17:06
  */
 public class LoginErrorCountRedisCache extends AbstractRedisCacheOperator<Integer> {

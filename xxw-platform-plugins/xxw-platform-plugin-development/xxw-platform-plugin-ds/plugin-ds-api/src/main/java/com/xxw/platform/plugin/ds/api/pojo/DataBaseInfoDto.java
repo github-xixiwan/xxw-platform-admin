@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 数据库连接信息的DTO
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/8/23 14:06
  */
 @Data

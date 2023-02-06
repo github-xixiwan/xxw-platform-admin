@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * 角色拥有的菜单、按钮、资源信息的集合
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/10/25 15:59
  */
 @Data

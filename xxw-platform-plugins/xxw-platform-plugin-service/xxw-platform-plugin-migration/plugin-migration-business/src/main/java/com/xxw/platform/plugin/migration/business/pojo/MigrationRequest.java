@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 迁移数据请求对象
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/7 9:15
  */
 @Data

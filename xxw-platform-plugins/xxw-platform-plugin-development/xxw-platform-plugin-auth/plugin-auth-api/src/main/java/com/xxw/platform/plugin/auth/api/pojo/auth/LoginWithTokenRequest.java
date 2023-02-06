@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 /**
  * 单点获取到的token
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/5/25 22:43
  */
 @EqualsAndHashCode(callSuper = true)

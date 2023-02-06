@@ -5,12 +5,10 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
-
-
 /**
  * 文件存储信息实例类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/01/08 15:53
  */
 @TableName("sys_file_storage")

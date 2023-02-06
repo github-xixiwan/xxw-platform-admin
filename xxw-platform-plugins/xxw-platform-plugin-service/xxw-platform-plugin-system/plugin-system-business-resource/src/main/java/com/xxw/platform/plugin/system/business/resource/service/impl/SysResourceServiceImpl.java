@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.resource.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
@@ -39,7 +15,7 @@ import com.xxw.platform.frame.common.enums.DbTypeEnum;
 import com.xxw.platform.frame.common.enums.ResBizTypeEnum;
 import com.xxw.platform.frame.common.enums.YesOrNotEnum;
 import com.xxw.platform.frame.common.tree.factory.DefaultTreeBuildFactory;
-import com.xxw.platform.frame.common.util.GunsResourceCodeUtil;
+import com.xxw.platform.frame.common.util.ResourceCodeUtil;
 import com.xxw.platform.plugin.auth.api.LoginUserApi;
 import com.xxw.platform.plugin.auth.api.context.LoginContext;
 import com.xxw.platform.plugin.auth.api.pojo.login.basic.SimpleRoleInfo;
@@ -76,7 +52,7 @@ import java.util.stream.Collectors;
 /**
  * 资源表 服务实现类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/11/23 22:45
  */
 @Service
@@ -286,7 +262,7 @@ public class SysResourceServiceImpl extends ServiceImpl<SysResourceMapper, SysRe
 
         // 批量更新资源编码
         for (SysResource sysResource : list) {
-            String newResourceCode = GunsResourceCodeUtil.replace(sysResource.getResourceCode(), newAppCode);
+            String newResourceCode = ResourceCodeUtil.replace(sysResource.getResourceCode(), newAppCode);
             sysResource.setResourceCode(newResourceCode);
         }
 
@@ -453,7 +429,7 @@ public class SysResourceServiceImpl extends ServiceImpl<SysResourceMapper, SysRe
     /**
      * 创建wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/6 10:16
      */
     private LambdaQueryWrapper<SysResource> createWrapper(ResourceRequest resourceRequest) {
@@ -479,7 +455,7 @@ public class SysResourceServiceImpl extends ServiceImpl<SysResourceMapper, SysRe
      * 划分数据库中的资源，切分成应用和模块分类的集合
      *
      * @return 第一个key是应用名称，第二个key是模块名称，值是应用对应的模块对应的资源列表
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/18 15:34
      */
     private Map<String, Map<String, List<LayuiApiResourceTreeNode>>> divideResources(List<SysResource> sysResources) {
@@ -520,7 +496,7 @@ public class SysResourceServiceImpl extends ServiceImpl<SysResourceMapper, SysRe
     /**
      * 创建模块code和name的映射
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/21 11:23
      */
     private Map<String, String> createModularCodeName(List<SysResource> resources) {
@@ -534,7 +510,7 @@ public class SysResourceServiceImpl extends ServiceImpl<SysResourceMapper, SysRe
     /**
      * 根据归好类的资源，创建资源树
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/18 15:45
      */
     private List<LayuiApiResourceTreeNode> createResourceTree(Map<String, Map<String, List<LayuiApiResourceTreeNode>>> appModularResources, Map<String, String> modularCodeName) {

@@ -14,7 +14,7 @@ import lombok.Data;
  * 例如：客户端发送给服务器一个心跳消息(type:299999)，服务端如果需要处理该消息就注册一个该消息的监听器，
  * 那么收到消息服务端会把消息推送给对应的监听器，接口见{@link SocketOperatorApi#msgTypeCallback}
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/1 下午2:56
  */
 @Data

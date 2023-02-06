@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * 清除当前登录用户相关的ThreadLocalHolder
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/10/29 11:41
  */
 @Component

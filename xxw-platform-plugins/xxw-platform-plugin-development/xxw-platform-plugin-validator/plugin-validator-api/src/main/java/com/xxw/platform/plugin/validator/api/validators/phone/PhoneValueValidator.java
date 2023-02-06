@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 /**
  * 校验手机号是否为11位
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/31 14:53
  */
 public class PhoneValueValidator implements ConstraintValidator<PhoneValue, String> {

@@ -3,7 +3,7 @@ package com.xxw.platform.plugin.security.sdk.read.constants;
 /**
  * 请求解密，响应加密 常量
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/3/23 12:54
  */
 public interface EncryptionConstants {

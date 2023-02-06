@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.organization.controller;
 
 import com.xxw.platform.frame.common.annotation.BusinessLog;
@@ -51,7 +27,7 @@ import java.util.List;
 /**
  * 系统组织机构控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/11/18 21:55
  */
 @RestController
@@ -64,7 +40,7 @@ public class HrOrganizationController {
     /**
      * 添加系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @PostResource(name = "添加系统组织机构", path = "/hrOrganization/add")
@@ -77,7 +53,7 @@ public class HrOrganizationController {
     /**
      * 删除系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @PostResource(name = "删除系统组织机构", path = "/hrOrganization/delete")
@@ -90,7 +66,7 @@ public class HrOrganizationController {
     /**
      * 编辑系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @PostResource(name = "编辑系统组织机构", path = "/hrOrganization/edit")
@@ -103,7 +79,7 @@ public class HrOrganizationController {
     /**
      * 修改组织机构状态
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @PostResource(name = "修改组织机构状态", path = "/hrOrganization/updateStatus")
@@ -116,7 +92,7 @@ public class HrOrganizationController {
     /**
      * 查看详情系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @GetResource(name = "查看详情系统组织机构", path = "/hrOrganization/detail")
@@ -127,7 +103,7 @@ public class HrOrganizationController {
     /**
      * 分页查询系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @Wrapper(OrgExpandWrapper.class)
@@ -139,7 +115,7 @@ public class HrOrganizationController {
     /**
      * 获取全部系统组织机构
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/04 11:05
      */
     @GetResource(name = "获取全部系统组织机构", path = "/hrOrganization/list")
@@ -150,7 +126,7 @@ public class HrOrganizationController {
     /**
      * 获取全部系统组织机构树（用于新增，编辑组织机构时选择上级节点，用于获取用户管理界面左侧组织机构树）
      *
-     * @author chenjinlong
+     * @author liaoxiting
      * @date 2021/01/05 15:55
      */
     @GetResource(name = "获取全部系统组织机构树", path = "/hrOrganization/tree")
@@ -161,7 +137,7 @@ public class HrOrganizationController {
     /**
      * 获取公司管理组织机构树
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/5/21 11:24
      */
     @GetResource(name = "获取公司管理组织机构树", path = "/hrOrganization/companyTree")
@@ -173,7 +149,7 @@ public class HrOrganizationController {
     /**
      * 获取组织机构树（用于用户绑定数据范围，可以渲染是否选中信息）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/3/19 22:20
      */
     @GetResource(name = "获取组织机构树(用于用户绑定数据范围)", path = "/hrOrganization/userBindOrgScope")
@@ -184,7 +160,7 @@ public class HrOrganizationController {
     /**
      * Layui版本--获取组织机构树（用于角色配置数据范围类型，并且数据范围类型是指定组织机构时）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/9 18:37
      */
     @GetResource(name = "Layui版本--获取组织机构树（用于角色配置数据范围类型，并且数据范围类型是指定组织机构时）", path = "/hrOrganization/roleBindOrgScope")
@@ -195,7 +171,7 @@ public class HrOrganizationController {
     /**
      * AntdVue版本--获取组织机构树（用于角色配置数据范围类型，并且数据范围类型是指定组织机构时）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/9 18:37
      */
     @GetResource(name = "AntdVue版本--获取组织机构树（用于角色配置数据范围类型，并且数据范围类型是指定组织机构时）", path = "/hrOrganization/roleBindOrgScopeAntdv")
@@ -209,7 +185,7 @@ public class HrOrganizationController {
      * <p>
      * 一般用在组织机构选择界面
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/9 18:37
      */
     @GetResource(name = "获取所有组织机构树（树形）", path = "/hrOrganization/getOrgTreeList")
@@ -221,7 +197,7 @@ public class HrOrganizationController {
     /**
      * 获取所有组织机构树列表，post方式
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/27 9:50
      */
     @PostResource(name = "获取所有组织机构树列表，post方式", path = "/hrOrganization/post/getOrgTreeList")
@@ -233,7 +209,7 @@ public class HrOrganizationController {
     /**
      * 获取某个公司下部门的机构树
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/9 18:37
      */
     @GetResource(name = "获取某个公司下部门的机构树", path = "/hrOrganization/getDeptOrgTree")
@@ -245,7 +221,7 @@ public class HrOrganizationController {
     /**
      * 批量获取组织机构信息列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/2 13:56
      */
     @PostResource(name = "批量获取组织机构信息列表", path = "/hrOrganization/getOrgInfoListByIds")

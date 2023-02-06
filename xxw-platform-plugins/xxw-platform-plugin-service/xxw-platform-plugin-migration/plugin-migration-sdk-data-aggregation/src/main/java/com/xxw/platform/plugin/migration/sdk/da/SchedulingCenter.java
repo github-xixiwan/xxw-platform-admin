@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * 调度中心
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/6 16:01
  */
 public class SchedulingCenter {
@@ -29,7 +29,7 @@ public class SchedulingCenter {
      * 接入一个迁移类
      *
      * @param accessMigrationApi 迁移接口
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/6 17:21
      **/
     public static void addMigration(AccessMigrationApi accessMigrationApi) {
@@ -45,7 +45,7 @@ public class SchedulingCenter {
      * 导入数据
      *
      * @param migrationAggregationPOJO 导入的数据
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/6 16:10
      **/
     public static void importData(MigrationAggregationPOJO migrationAggregationPOJO, String type) {
@@ -76,7 +76,7 @@ public class SchedulingCenter {
      *
      * @param migrationAggregationPOJO 导出要求
      * @return {@link MigrationAggregationPOJO}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/6 16:11
      **/
     public static MigrationAggregationPOJO exportData(MigrationAggregationPOJO migrationAggregationPOJO) {
@@ -113,7 +113,7 @@ public class SchedulingCenter {
      * 获取所有迁移数据列表
      *
      * @return {@link List<MigrationInfo>}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/6 16:13
      **/
     public static List<String> getAllMigrationInfo() {

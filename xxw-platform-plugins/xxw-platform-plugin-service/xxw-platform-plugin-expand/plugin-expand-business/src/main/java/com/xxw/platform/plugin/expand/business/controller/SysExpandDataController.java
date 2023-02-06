@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 业务拓展-具体数据控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @RestController
@@ -33,7 +33,7 @@ public class SysExpandDataController {
     /**
      * 删除
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "删除", path = "/sysExpandData/delete")
@@ -45,7 +45,7 @@ public class SysExpandDataController {
     /**
      * 查看详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "查看详情", path = "/sysExpandData/detail")
@@ -56,7 +56,7 @@ public class SysExpandDataController {
     /**
      * 获取列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "获取列表", path = "/sysExpandData/list")
@@ -67,7 +67,7 @@ public class SysExpandDataController {
     /**
      * 获取列表（带分页）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "分页查询", path = "/sysExpandData/page")

@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.api;
 
 import com.xxw.platform.plugin.system.api.enums.DetectModeEnum;
@@ -34,7 +10,7 @@ import java.util.List;
 /**
  * 组织机构api
  *
- * @author liuhanqing
+ * @author liaoxiting
  * @date 2021/1/15 10:40
  */
 public interface OrganizationServiceApi {
@@ -43,7 +19,7 @@ public interface OrganizationServiceApi {
      * 查询系统组织机构
      *
      * @return 组织机构列表
-     * @author liuhanqing
+     * @author liaoxiting
      * @date 2021/1/15 10:41
      */
     List<HrOrganizationDTO> orgList();
@@ -59,7 +35,7 @@ public interface OrganizationServiceApi {
     /**
      * 批量获取组织机构信息详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/10/31 20:02
      */
     List<HrOrganizationDTO> getOrgDetailList(List<Long> orgIdList);
@@ -67,7 +43,7 @@ public interface OrganizationServiceApi {
     /**
      * 获取组织机构下拉选择树
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/6/8 14:40
      */
     List<OrganizationTreeNode> getOrgTreeList(HrOrganizationRequest hrOrganizationRequest);
@@ -75,7 +51,7 @@ public interface OrganizationServiceApi {
     /**
      * 获取某个公司下，所有部门树的集合
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/6/16 18:26
      */
     List<OrganizationTreeNode> getDeptOrgTree(Long orgId);
@@ -90,7 +66,7 @@ public interface OrganizationServiceApi {
      * @param parentLevelNum 上级机构的层级数，从0开始，0代表直接返回本部门
      * @param detectModeEnum 自上而下还是自下而上
      * @return 上级机构的id
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/18 15:02
      */
     Long getParentLevelOrgId(Long orgId, Integer parentLevelNum, DetectModeEnum detectModeEnum);

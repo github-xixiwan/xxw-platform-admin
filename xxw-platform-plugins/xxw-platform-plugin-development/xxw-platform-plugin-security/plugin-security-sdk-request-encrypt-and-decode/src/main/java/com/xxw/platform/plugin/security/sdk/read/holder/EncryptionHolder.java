@@ -3,7 +3,7 @@ package com.xxw.platform.plugin.security.sdk.read.holder;
 /**
  * 用于存储响应加密秘钥
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/3/23 12:54
  */
 public class EncryptionHolder {
@@ -23,7 +23,7 @@ public class EncryptionHolder {
     /**
      * 获取
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/8/24
      */
     public static String getAesKey() {
@@ -33,7 +33,7 @@ public class EncryptionHolder {
     /**
      * 清除
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/8/24
      */
     public static void clearAesKey() {

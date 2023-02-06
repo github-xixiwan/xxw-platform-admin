@@ -5,7 +5,7 @@ import lombok.Getter;
 /**
  * 迁移类型枚举
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/6 16:25
  */
 @Getter

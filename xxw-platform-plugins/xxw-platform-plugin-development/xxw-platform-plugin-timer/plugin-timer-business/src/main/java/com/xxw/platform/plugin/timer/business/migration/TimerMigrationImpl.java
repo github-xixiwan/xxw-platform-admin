@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 /**
  * 定时任务迁移接入实现
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/8 9:24
  */
 @Component

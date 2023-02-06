@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * <p>
  * 该注解作用范围在类上面
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/3 10:54
  */
 @Inherited

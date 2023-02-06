@@ -1,6 +1,4 @@
 package com.xxw.platform.plugin.security.starter.cache;
-
-
 import cn.hutool.cache.CacheUtil;
 import cn.hutool.cache.impl.TimedCache;
 import com.xxw.platform.plugin.cache.api.CacheOperatorApi;
@@ -16,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 安全模块，缓存的依赖
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/11/8 9:57
  */
 @Configuration
@@ -26,7 +24,7 @@ public class SecurityMemoryCacheAutoConfiguration {
     /**
      * 验证码相关的缓存，内存缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 20:44
      */
     @Bean("captchaCache")
@@ -39,7 +37,7 @@ public class SecurityMemoryCacheAutoConfiguration {
     /**
      * 黑名单的缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 21:24
      */
     @Bean("blackListCache")
@@ -51,7 +49,7 @@ public class SecurityMemoryCacheAutoConfiguration {
     /**
      * 白名单的缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 21:24
      */
     @Bean("whiteListCache")
@@ -63,7 +61,7 @@ public class SecurityMemoryCacheAutoConfiguration {
     /**
      * 计数缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/11/8 21:24
      */
     @Bean("countValidateCache")

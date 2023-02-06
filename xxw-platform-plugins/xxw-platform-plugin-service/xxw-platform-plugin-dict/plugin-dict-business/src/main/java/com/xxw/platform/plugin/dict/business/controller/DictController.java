@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.dict.business.controller;
 
 import com.xxw.platform.frame.common.annotation.BusinessLog;
@@ -48,7 +24,7 @@ import java.util.List;
 /**
  * 字典详情管理，具体管理某个字典类型下的条目
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/29 14:45
  */
 @RestController
@@ -61,7 +37,7 @@ public class DictController {
     /**
      * 添加字典条目
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:35
      */
     @PostResource(name = "添加字典", path = "/dict/add")
@@ -74,7 +50,7 @@ public class DictController {
     /**
      * 删除字典条目
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:35
      */
     @PostResource(name = "删除字典", path = "/dict/delete")
@@ -87,7 +63,7 @@ public class DictController {
     /**
      * 修改字典条目
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:35
      */
     @PostResource(name = "修改字典", path = "/dict/edit")
@@ -100,7 +76,7 @@ public class DictController {
     /**
      * 获取字典详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:35
      */
     @GetResource(name = "获取字典详情", path = "/dict/detail", requiredPermission = false)
@@ -112,7 +88,7 @@ public class DictController {
     /**
      * 获取字典列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:35
      */
     @GetResource(name = "获取字典列表", path = "/dict/list", requiredPermission = false)
@@ -123,19 +99,17 @@ public class DictController {
     /**
      * 获取字典列表(分页)
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:35
      */
     @GetResource(name = "获取字典列表", path = "/dict/page", requiredPermission = false)
     public ResponseData<PageResult<SysDict>> page(DictRequest dictRequest) {
         return new SuccessResponseData<>(this.dictService.findPage(dictRequest));
     }
-
-
     /**
      * 获取树形字典列表（antdv在用）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/29 16:36
      */
     @GetResource(name = "获取树形字典列表", path = "/dict/getDictTreeList", requiredPermission = false)
@@ -147,7 +121,7 @@ public class DictController {
     /**
      * 获取系统配置分组字典列表(分页)（给系统配置界面，左侧获取配置的分类用）
      *
-     * @author chenjinlong
+     * @author liaoxiting
      * @date 2021/1/25 11:47
      */
     @GetResource(name = "获取系统配置分组字典列表", path = "/dict/getConfigGroupPage", requiredPermission = false)
@@ -160,7 +134,7 @@ public class DictController {
     /**
      * 获取多语言字典列表(分页)（给多语言界面，左侧获取多语言的分类用）
      *
-     * @author chenjinlong
+     * @author liaoxiting
      * @date 2021/1/25 11:47
      */
     @GetResource(name = "获取多语言字典列表", path = "/dict/getLanguagesPage", requiredPermission = false)

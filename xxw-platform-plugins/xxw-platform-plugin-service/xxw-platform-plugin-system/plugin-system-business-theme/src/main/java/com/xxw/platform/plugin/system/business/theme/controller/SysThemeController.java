@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 /**
  * 系统主题控制器
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 16:40
  */
 @RestController
@@ -34,7 +34,7 @@ public class SysThemeController {
     /**
      * 增加系统主题
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 16:43
      */
     @PostResource(name = "增加系统主题", path = "/sysTheme/add")
@@ -47,7 +47,7 @@ public class SysThemeController {
     /**
      * 删除系统主题
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 16:45
      */
     @PostResource(name = "删除系统主题", path = "/sysTheme/del")
@@ -60,7 +60,7 @@ public class SysThemeController {
     /**
      * 修改系统主题
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 16:50
      */
     @PostResource(name = "修改系统主题", path = "/sysTheme/edit")
@@ -73,7 +73,7 @@ public class SysThemeController {
     /**
      * 查询系统主题
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 16:58
      */
     @GetResource(name = "查询系统主题", path = "/sysTheme/findPage")
@@ -84,7 +84,7 @@ public class SysThemeController {
     /**
      * 查询系统主题详情
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 17:04
      */
     @GetResource(name = "查询系统主题详情", path = "/sysTheme/detail")
@@ -95,7 +95,7 @@ public class SysThemeController {
     /**
      * 修改系统主题启用状态
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 17:32
      */
     @PostResource(name = "修改系统主题启用状态", path = "/sysTheme/updateStatus")

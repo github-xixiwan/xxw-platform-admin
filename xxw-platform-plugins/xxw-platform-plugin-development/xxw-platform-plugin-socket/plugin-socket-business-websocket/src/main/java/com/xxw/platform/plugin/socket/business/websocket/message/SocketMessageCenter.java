@@ -10,7 +10,7 @@ import java.util.Map;
  * <p>
  * 维护所有消息类型对应的处理器
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/6/1 下午2:20
  */
 public class SocketMessageCenter {
@@ -25,7 +25,7 @@ public class SocketMessageCenter {
      *
      * @param msgType  消息类型
      * @param listener 监听器
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午2:25
      **/
     public static void setMessageListener(String msgType, SocketMsgCallbackInterface listener) {
@@ -37,7 +37,7 @@ public class SocketMessageCenter {
      *
      * @param msgType 消息类型
      * @return {@link SocketMsgCallbackInterface}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/6/1 下午2:26
      **/
     public static SocketMsgCallbackInterface getSocketMsgCallbackInterface(String msgType) {

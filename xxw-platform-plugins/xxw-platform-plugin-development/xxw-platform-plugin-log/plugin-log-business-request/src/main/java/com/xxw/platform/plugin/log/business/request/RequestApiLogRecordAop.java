@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.log.business.request;
 
 import cn.hutool.core.util.ObjectUtil;
@@ -61,7 +37,7 @@ import java.util.Map;
  * <p>
  * 将控制器controller包下的所有控制器类，执行的时候对url，参数，结果等进行记录
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/28 17:06
  */
 @Aspect
@@ -120,7 +96,7 @@ public class RequestApiLogRecordAop implements Ordered {
      *
      * @param joinPoint joinPoint对象
      * @return 返回K, V格式的参数，key是参数名称，v是参数值
-     * @author liuhanqing
+     * @author liaoxiting
      * @date 2020/12/22 21:18
      */
     private Map<String, Object> getAnnotationProp(ProceedingJoinPoint joinPoint) {
@@ -161,7 +137,7 @@ public class RequestApiLogRecordAop implements Ordered {
      * @param params         AOP拦截方法的参数封装，key是参数名称，v是参数值
      * @param result         AOP拦截方法的返回值
      * @param annotationProp AOP拦截注解属性
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/28 17:38
      */
     private void recordLog(Map<String, Object> params, Object result, Map<String, Object> annotationProp) {
@@ -194,7 +170,7 @@ public class RequestApiLogRecordAop implements Ordered {
      *
      * @param joinPoint joinPoint对象
      * @return 返回K, V格式的参数，key是参数名称，v是参数值
-     * @author majianguo
+     * @author liaoxiting
      * @date 2020/11/2 10:40
      */
     private Map<String, Object> getFieldsName(ProceedingJoinPoint joinPoint) {
@@ -271,7 +247,7 @@ public class RequestApiLogRecordAop implements Ordered {
     /**
      * 确定当前接口是否需要记录日志
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/12 20:44
      */
     private boolean ensureMakeLog(ProceedingJoinPoint point) {

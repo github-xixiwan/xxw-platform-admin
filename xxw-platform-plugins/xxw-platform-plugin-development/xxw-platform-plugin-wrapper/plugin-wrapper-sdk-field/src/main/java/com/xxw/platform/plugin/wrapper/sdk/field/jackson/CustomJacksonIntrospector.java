@@ -14,7 +14,7 @@ import com.xxw.platform.plugin.wrapper.sdk.field.simple.SimpleFieldFormatSeriali
 /**
  * Json序列化，注解拦截器，针对自定义注解进行拓展性序列化
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/6 13:56
  */
 public class CustomJacksonIntrospector extends JacksonAnnotationIntrospector {

@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * 数据迁移聚合类
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/6 16:10
  */
 @Data

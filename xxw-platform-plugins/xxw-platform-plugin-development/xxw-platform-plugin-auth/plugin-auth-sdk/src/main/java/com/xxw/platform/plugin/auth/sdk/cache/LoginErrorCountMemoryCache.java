@@ -9,7 +9,7 @@ import com.xxw.platform.plugin.cache.sdk.memory.AbstractMemoryCacheOperator;
  * <p>
  * key是用户账号，value是登录失败错误次数
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/3/15 17:09
  */
 public class LoginErrorCountMemoryCache extends AbstractMemoryCacheOperator<Integer> {

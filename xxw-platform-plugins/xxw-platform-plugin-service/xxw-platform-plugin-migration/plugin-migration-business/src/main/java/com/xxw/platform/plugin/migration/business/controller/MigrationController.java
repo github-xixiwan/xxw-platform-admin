@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * 数据迁移控制器
  *
- * @author majianguo
+ * @author liaoxiting
  * @date 2021/7/6 17:35
  */
 @RestController
@@ -37,7 +37,7 @@ public class MigrationController {
      * 获取所有可备份数据列表
      *
      * @return {@link ResponseData}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/6 17:37
      **/
     @GetResource(name = "获取所有可备份数据列表", path = "/dataMigration/getAllMigrationList")
@@ -50,7 +50,7 @@ public class MigrationController {
      * 备份指定数据列表
      *
      * @return {@link import com.xxw.platform.frame.common.pojo.response.ResponseData}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/7 11:11
      **/
     @GetResource(name = "备份指定数据列表", path = "/dataMigration/migrationSelectData")
@@ -73,7 +73,7 @@ public class MigrationController {
      * 恢复备份数据
      *
      * @return {@link ResponseData}
-     * @author majianguo
+     * @author liaoxiting
      * @date 2021/7/7 11:11
      **/
     @PostResource(name = "恢复备份数据", path = "/dataMigration/restoreData")

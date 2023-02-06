@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * 系统主题模板控制器
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 13:53
  */
 @RestController
@@ -35,7 +35,7 @@ public class SysThemeTemplateController {
     /**
      * 增加系统主题模板
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 14:16
      */
     @PostResource(name = "增加系统主题模板", path = "/sysThemeTemplate/add")
@@ -48,7 +48,7 @@ public class SysThemeTemplateController {
     /**
      * 编辑系统主题模板
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 14:36
      */
     @PostResource(name = "编辑系统主题模板", path = "/sysThemeTemplate/edit")
@@ -61,7 +61,7 @@ public class SysThemeTemplateController {
     /**
      * 删除系统主题模板
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 14:47
      */
     @PostResource(name = "删除系统主题模板", path = "/sysThemeTemplate/del")
@@ -74,7 +74,7 @@ public class SysThemeTemplateController {
     /**
      * 查询系统主题模板
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 15:00
      */
     @GetResource(name = "查询系统主题模板", path = "/sysThemeTemplate/findPage")
@@ -85,7 +85,7 @@ public class SysThemeTemplateController {
     /**
      * 查询系统主题模板列表
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/29 9:12
      */
     @GetResource(name = "查询系统主题模板列表", path = "/sysThemeTemplate/findList")
@@ -96,7 +96,7 @@ public class SysThemeTemplateController {
     /**
      * 修改系统主题模板状态
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 15:09
      */
     @PostResource(name = "修改系统主题模板状态", path = "/sysThemeTemplate/updateStatus")
@@ -109,7 +109,7 @@ public class SysThemeTemplateController {
     /**
      * 查询系统主题模板详情
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 16:09
      */
     @GetResource(name = "查询系统主题模板详情", path = "/sysThemeTemplate/detail")

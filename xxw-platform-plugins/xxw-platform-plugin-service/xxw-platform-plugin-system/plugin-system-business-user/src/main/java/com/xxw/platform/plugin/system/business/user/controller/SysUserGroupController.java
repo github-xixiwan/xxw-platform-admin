@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 用户组控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/09/26 10:12
  */
 @RestController
@@ -33,7 +33,7 @@ public class SysUserGroupController {
     /**
      * 添加
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     @PostResource(name = "添加", path = "/sysUserGroup/add")
@@ -45,7 +45,7 @@ public class SysUserGroupController {
     /**
      * 查看详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     @GetResource(name = "查看详情", path = "/sysUserGroup/detail")
@@ -56,7 +56,7 @@ public class SysUserGroupController {
     /**
      * 获取用户组-选择关系列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/09/26 10:12
      */
     @GetResource(name = "获取用户组-选择关系列表", path = "/sysUserGroup/getSelectRelationList")

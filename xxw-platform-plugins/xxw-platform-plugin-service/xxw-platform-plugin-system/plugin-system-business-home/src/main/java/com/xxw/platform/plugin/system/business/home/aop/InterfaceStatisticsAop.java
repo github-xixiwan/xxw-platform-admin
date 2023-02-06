@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * 接口统计的AOP
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2022/2/10 9:56
  */
 @Slf4j
@@ -40,7 +40,7 @@ public class InterfaceStatisticsAop implements Ordered {
     /**
      * 切所有控制器方法
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/2/10 20:25
      */
     @Pointcut("execution(* *..controller.*.*(..)) || execution(* *..*Controller.*(..))")
@@ -50,7 +50,7 @@ public class InterfaceStatisticsAop implements Ordered {
     /**
      * 具体切面逻辑
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/2/10 20:25
      */
     @Around(value = "flowControl()")
@@ -73,7 +73,7 @@ public class InterfaceStatisticsAop implements Ordered {
     /**
      * 保存接口统计数据，记录当前用户对当前url的访问
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/2/10 21:25
      */
     private void saveRequestCount() {

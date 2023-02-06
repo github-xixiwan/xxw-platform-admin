@@ -33,7 +33,7 @@ import java.util.Locale;
 /**
  * 系统主题模板service接口实现类
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 13:58
  */
 @Service
@@ -158,7 +158,7 @@ public class SysThemeTemplateServiceImpl extends ServiceImpl<SysThemeTemplateMap
     /**
      * 查询单个系统主题模板
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 14:28
      */
     private SysThemeTemplate querySysThemeTemplateById(SysThemeTemplateRequest sysThemeTemplateRequest) {

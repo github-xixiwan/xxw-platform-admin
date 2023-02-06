@@ -10,7 +10,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
 /**
  * 监听项目启动，进行menu_resource表的资源名称前缀修改
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/11/16 23:05
  */
 public class MenuResourceUpdateListener extends ApplicationStartedListener implements Ordered {

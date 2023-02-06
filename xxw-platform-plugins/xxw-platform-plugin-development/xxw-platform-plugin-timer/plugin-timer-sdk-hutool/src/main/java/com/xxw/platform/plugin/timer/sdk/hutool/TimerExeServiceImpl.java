@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  * HuToolTimerExeServiceImpl的改造
  * 当引入spring cloud后，需要对原有事件进行改造，使其只执行一次，防止出现错误。
  *
- * @author xielin
+ * @author liaoxiting
  * @date 2022/11/11 16:04
  */
 @Slf4j

@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * 当请求404的时候返回的错误界面
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2021/5/17 10:45
  */
 public class ErrorStaticJsonView implements View {

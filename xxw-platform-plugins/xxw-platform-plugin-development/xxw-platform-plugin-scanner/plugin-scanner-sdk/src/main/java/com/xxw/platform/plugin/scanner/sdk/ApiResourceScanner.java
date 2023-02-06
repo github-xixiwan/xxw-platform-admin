@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.scanner.sdk;
 
 import cn.hutool.core.exceptions.UtilException;
@@ -61,7 +37,7 @@ import java.util.*;
 /**
  * 资源扫描器，扫描控制器上的@ApiResource，@GetResource，@PostResource
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/19 22:31
  */
 @Slf4j
@@ -117,7 +93,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
     /**
      * 判断一个类是否是控制器
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/9 11:21
      */
     private boolean getControllerFlag(Class<?> clazz) {
@@ -133,7 +109,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
     /**
      * 扫描整个类中包含的所有@ApiResource资源
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/9 11:21
      */
     private List<ResourceDefinition> doScan(Class<?> clazz) {
@@ -187,7 +163,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
     /**
      * 缓存扫描到的api资源
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/9 11:22
      */
     private void persistApiResources(List<ResourceDefinition> apiResources) {
@@ -197,7 +173,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
     /**
      * 根据类信息，方法信息，注解信息创建ResourceDefinition对象
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/9 11:22
      */
     private ResourceDefinition createDefinition(Class<?> controllerClass, Method method, Annotation apiResource) {
@@ -333,7 +309,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
      *
      * @param clazz 控制器的类
      * @param path  控制器方法注解上的路径
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/1/5 14:43
      */
     private String createControllerPath(Class<?> clazz, String path) {
@@ -364,7 +340,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
      * 根据appCode和contextPath等，拼出整个接口的路径
      *
      * @param controllerMethodPath 控制器和控制器方法的path的组合
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/14 22:17
      */
     private String createFinalUrl(String controllerMethodPath) {
@@ -394,7 +370,7 @@ public class ApiResourceScanner implements BeanPostProcessor {
     /**
      * 调用注解上的某个方法，并获取结果
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/12/8 17:13
      */
     private <T> T invokeAnnotationMethod(Annotation apiResource, String methodName, Class<T> resultType) {

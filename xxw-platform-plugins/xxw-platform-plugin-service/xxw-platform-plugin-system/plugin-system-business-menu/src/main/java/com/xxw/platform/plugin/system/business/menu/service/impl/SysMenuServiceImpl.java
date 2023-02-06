@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.menu.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
@@ -82,7 +58,7 @@ import java.util.stream.Collectors;
 /**
  * 系统菜单service接口实现类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/3/13 16:05
  */
 @Service
@@ -706,7 +682,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
     /**
      * 获取系统菜单
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/27 9:13
      */
     private SysMenu querySysMenu(SysMenuRequest sysMenuRequest) {
@@ -724,7 +700,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
      * <p>
      * 如果pid不是顶级节点，pids就是父菜单的pids + [pid] + ,
      *
-     * @author fengshuonan, stylefeng
+     * @author liaoxiting
      * @date 2020/3/26 11:28
      */
     private String createPids(Long pid) {
@@ -744,7 +720,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
     /**
      * 创建查询条件wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/6 10:16
      */
     private LambdaQueryWrapper<SysMenu> createWrapper(SysMenuRequest sysMenuRequest) {
@@ -782,7 +758,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
     /**
      * 获取当前用户的菜单id集合
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/22 23:15
      */
     private List<Long> getCurrentUserMenuIds() {
@@ -808,7 +784,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
     /**
      * 更新子节点以及子节点的子节点的appCode和层级关系（pids）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/11/23 22:05
      */
     private String updateChildrenAppAndLevel(SysMenuRequest sysMenuRequest, SysMenu oldMenu) {
@@ -878,7 +854,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
      * 获取所有的菜单，以一级菜单的形式展示
      *
      * @param antdvFrontType 菜单是前台显示还是后台显示
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/28 17:46
      */
     private List<SysMenu> totalMenusWithOneLevel(Integer antdvFrontType) {

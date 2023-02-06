@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.ds.sdk.persist;
 
 import cn.hutool.core.date.DateUtil;
@@ -45,7 +21,7 @@ import java.util.Map;
 /**
  * 数据源信息相关操作的dao
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/31 23:47
  */
 @Slf4j
@@ -60,7 +36,7 @@ public class DataBaseInfoPersistence {
     /**
      * 查询所有数据源列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/31 23:55
      */
     public Map<String, DruidProperties> getAllDataBaseInfo() {
@@ -94,7 +70,7 @@ public class DataBaseInfoPersistence {
     /**
      * 初始化master的数据源，要和properties配置的数据源一致
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/31 23:55
      */
     public void createMasterDatabaseInfo() {
@@ -130,7 +106,7 @@ public class DataBaseInfoPersistence {
     /**
      * 删除master的数据源信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/31 23:55
      */
     public void deleteMasterDatabaseInfo() {
@@ -156,7 +132,7 @@ public class DataBaseInfoPersistence {
     /**
      * 通过查询结果组装druidProperties
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/10/31 23:55
      */
     private DruidProperties createDruidProperties(ResultSet resultSet) {

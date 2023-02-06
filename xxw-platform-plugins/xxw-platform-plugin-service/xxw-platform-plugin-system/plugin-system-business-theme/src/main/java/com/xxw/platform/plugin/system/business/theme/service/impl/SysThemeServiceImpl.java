@@ -54,7 +54,7 @@ import java.util.stream.Collectors;
 /**
  * 系统主题service接口实现类
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/17 16:17
  */
 @Service
@@ -125,8 +125,6 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
             List<SysThemeTemplateField> sysThemeTemplateFields = sysThemeTemplateFieldService.list(queryWrapper);
             fileNames = sysThemeTemplateFields.stream().map(SysThemeTemplateField::getFieldCode).collect(Collectors.toList());
         }
-
-
         // 删除图片
         if (fileNames.size() > 0) {
             for (String themeKey : themeKeys) {
@@ -265,7 +263,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
     /**
      * 查询单个系统主题
      *
-     * @author xixiaowei
+     * @author liaoxiting
      * @date 2021/12/17 16:30
      */
     private SysTheme querySysThemeById(SysThemeRequest sysThemeRequest) {
@@ -279,7 +277,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
     /**
      * 查找系统中默认的主题
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/11 9:44
      */
     private DefaultTheme querySystemTheme() {
@@ -313,7 +311,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
     /**
      * 将属性中所有是文件类型的文件id转化为文件url
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/11 11:12
      */
     private DefaultTheme parseFileUrls(DefaultTheme theme) {
@@ -385,7 +383,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
     /**
      * 获取默认系统的模板id
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/11 11:35
      */
     private Long getDefaultTemplateId() {
@@ -403,7 +401,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
     /**
      * 清除主题缓存
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/12 12:49
      */
     private void clearThemeCache() {

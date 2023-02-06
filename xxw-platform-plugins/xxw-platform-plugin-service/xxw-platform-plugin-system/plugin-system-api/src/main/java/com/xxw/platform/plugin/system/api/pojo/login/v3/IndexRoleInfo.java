@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 角色信息
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/4/8 15:06
  */
 @Data

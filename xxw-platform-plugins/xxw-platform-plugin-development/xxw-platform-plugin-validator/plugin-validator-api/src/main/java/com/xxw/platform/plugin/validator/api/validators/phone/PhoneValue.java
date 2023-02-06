@@ -9,7 +9,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * 校验手机号码格式
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/10/31 14:53
  */
 @Documented

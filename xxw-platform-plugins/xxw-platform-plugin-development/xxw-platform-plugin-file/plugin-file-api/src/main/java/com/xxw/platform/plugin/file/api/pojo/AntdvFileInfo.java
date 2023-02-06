@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 前端antdv组件需要的文件信息封装
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/1 22:14
  */
 @Data

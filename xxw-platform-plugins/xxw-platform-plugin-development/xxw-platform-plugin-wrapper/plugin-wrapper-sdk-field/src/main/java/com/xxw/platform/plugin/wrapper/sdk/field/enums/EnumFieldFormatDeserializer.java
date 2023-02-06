@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * 针对@EnumFieldFormat注解的具体反序列化过程
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/24 15:04
  */
 @Slf4j

@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * 业务拓展控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @RestController
@@ -40,7 +40,7 @@ public class SysExpandController {
     /**
      * 添加
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "添加", path = "/sysExpand/add")
@@ -52,7 +52,7 @@ public class SysExpandController {
     /**
      * 删除
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "删除", path = "/sysExpand/delete")
@@ -64,7 +64,7 @@ public class SysExpandController {
     /**
      * 编辑
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "编辑", path = "/sysExpand/edit")
@@ -76,7 +76,7 @@ public class SysExpandController {
     /**
      * 修改业务状态
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @PostResource(name = "修改业务状态", path = "/sysExpand/updateStatus")
@@ -88,7 +88,7 @@ public class SysExpandController {
     /**
      * 查看详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "查看详情", path = "/sysExpand/detail")
@@ -99,7 +99,7 @@ public class SysExpandController {
     /**
      * 根据业务编码获取业务数据详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "根据业务编码获取业务数据详情", path = "/sysExpand/getByExpandCode")
@@ -110,7 +110,7 @@ public class SysExpandController {
     /**
      * 获取列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "获取列表", path = "/sysExpand/list")
@@ -121,7 +121,7 @@ public class SysExpandController {
     /**
      * 获取列表（带分页）
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "分页查询", path = "/sysExpand/page")
@@ -132,7 +132,7 @@ public class SysExpandController {
     /**
      * 获取某个业务，需要列表展示的拓展字段
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     @GetResource(name = "获取某个业务，需要列表展示的拓展字段", path = "/sysExpand/getListFields")

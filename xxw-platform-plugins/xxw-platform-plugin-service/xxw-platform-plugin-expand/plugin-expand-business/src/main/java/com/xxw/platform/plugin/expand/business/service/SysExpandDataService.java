@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 业务拓展-具体数据 服务类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 public interface SysExpandDataService extends IService<SysExpandData> {
@@ -19,7 +19,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
      * 新增
      *
      * @param sysExpandDataRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     void add(SysExpandDataRequest sysExpandDataRequest);
@@ -28,7 +28,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
      * 删除
      *
      * @param sysExpandDataRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     void del(SysExpandDataRequest sysExpandDataRequest);
@@ -37,7 +37,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
      * 编辑
      *
      * @param sysExpandDataRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     void edit(SysExpandDataRequest sysExpandDataRequest);
@@ -46,7 +46,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
      * 查询详情
      *
      * @param sysExpandDataRequest 请求参数
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     SysExpandData detail(SysExpandDataRequest sysExpandDataRequest);
@@ -54,7 +54,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
     /**
      * 查询详情
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     SysExpandData detailByPrimaryFieldValue(Long primaryFieldValue);
@@ -64,7 +64,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
      *
      * @param sysExpandDataRequest 请求参数
      * @return List<SysExpandData>   返回结果
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     List<SysExpandData> findList(SysExpandDataRequest sysExpandDataRequest);
@@ -74,7 +74,7 @@ public interface SysExpandDataService extends IService<SysExpandData> {
      *
      * @param sysExpandDataRequest 请求参数
      * @return PageResult<SysExpandData>   返回结果
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     PageResult<SysExpandData> findPage(SysExpandDataRequest sysExpandDataRequest);

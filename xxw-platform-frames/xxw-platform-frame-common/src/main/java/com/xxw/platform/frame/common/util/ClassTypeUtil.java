@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * 获取类类型的工具
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/1/14 16:42
  */
 @Slf4j
@@ -25,12 +25,12 @@ public class ClassTypeUtil {
     /**
      * 认定为实体对象的包结构，如果属于此包结构，则会被认定为实体结构
      */
-    public static List<String> entityScanPackage = ListUtil.list(false, "cn.stylefeng");
+    public static List<String> entityScanPackage = ListUtil.list(false, "com.xxw.platform");
 
     /**
      * 判断类类型是否是扫描的包范围之内
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/13 17:49
      */
     public static boolean ensureEntityFlag(Class<?> clazz) {
@@ -45,7 +45,7 @@ public class ClassTypeUtil {
     /**
      * 获取类类型的类别
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/1/14 0:25
      */
     public static FieldTypeEnum getClassFieldType(Type type) {

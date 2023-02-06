@@ -25,7 +25,7 @@
      * requiredEncryption = true
      * </p>
      *
-     * @author luojie
+     * @author liaoxiting
      * @date 2021/3/27 22:31
      */
     @PostResource(name = "示例加密方法", path = "/encode", requiredPermission = false, requiredLogin = false, requiredEncryption = true)

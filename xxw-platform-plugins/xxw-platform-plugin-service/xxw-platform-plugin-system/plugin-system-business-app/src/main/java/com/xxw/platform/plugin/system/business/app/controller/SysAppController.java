@@ -1,27 +1,3 @@
-/*
- * Copyright [2020-2030] [https://www.stylefeng.cn]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * Guns采用APACHE LICENSE 2.0开源协议，您在使用过程中，需要注意以下几点：
- *
- * 1.请不要删除和修改根目录下的LICENSE文件。
- * 2.请不要删除和修改Guns源码头部的版权声明。
- * 3.请保留源码和相关描述文件的项目出处，作者声明等。
- * 4.分发源码时候，请注明软件出处 https://gitee.com/stylefeng/guns
- * 5.在修改包名，模块名称，项目代码等时，请注明软件出处 https://gitee.com/stylefeng/guns
- * 6.若您的项目无法满足以上几点，可申请商业授权
- */
 package com.xxw.platform.plugin.system.business.app.controller;
 
 import com.xxw.platform.frame.common.annotation.BusinessLog;
@@ -45,7 +21,7 @@ import java.util.List;
 /**
  * 系统应用控制器
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2020/3/20 21:25
  */
 @RestController
@@ -58,7 +34,7 @@ public class SysAppController {
     /**
      * 添加系统应用
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/25 14:44
      */
     @PostResource(name = "添加系统应用", path = "/sysApp/add")
@@ -71,7 +47,7 @@ public class SysAppController {
     /**
      * 删除系统应用
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/25 14:54
      */
     @PostResource(name = "删除系统应用", path = "/sysApp/delete")
@@ -84,7 +60,7 @@ public class SysAppController {
     /**
      * 编辑系统应用
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/25 14:54
      */
     @PostResource(name = "编辑系统应用", path = "/sysApp/edit")
@@ -97,7 +73,7 @@ public class SysAppController {
     /**
      * 修改应用状态
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/6/29 16:49
      */
     @PostResource(name = "修改应用状态", path = "/sysApp/updateStatus")
@@ -110,7 +86,7 @@ public class SysAppController {
     /**
      * 查看系统应用
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/26 9:49
      */
     @GetResource(name = "查看系统应用", path = "/sysApp/detail")
@@ -121,7 +97,7 @@ public class SysAppController {
     /**
      * 系统应用列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/4/19 14:55
      */
     @GetResource(name = "系统应用列表", path = "/sysApp/list")
@@ -132,7 +108,7 @@ public class SysAppController {
     /**
      * 查询系统应用
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/3/20 21:23
      */
     @GetResource(name = "查询系统应用", path = "/sysApp/page")
@@ -143,7 +119,7 @@ public class SysAppController {
     /**
      * 将应用设为默认应用，用户进入系统会默认进这个应用的菜单
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2020/6/29 16:49
      */
     @PostResource(name = "设为默认应用", path = "/sysApp/updateActiveFlag")
@@ -156,7 +132,7 @@ public class SysAppController {
     /**
      * 获取应用列表，用于顶部应用列表
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2021/4/21 15:31
      */
     @GetResource(name = "获取应用列表，用于顶部应用列表", path = "/sysMenu/getTopAppList", requiredPermission = false)

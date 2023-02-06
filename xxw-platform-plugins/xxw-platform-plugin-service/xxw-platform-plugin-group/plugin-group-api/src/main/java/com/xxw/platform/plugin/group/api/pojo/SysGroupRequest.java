@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 业务分组封装类
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/05/11 12:54
  */
 @EqualsAndHashCode(callSuper = true)

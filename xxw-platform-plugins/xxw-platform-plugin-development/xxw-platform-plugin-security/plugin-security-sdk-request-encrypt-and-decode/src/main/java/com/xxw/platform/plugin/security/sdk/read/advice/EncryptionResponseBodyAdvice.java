@@ -26,7 +26,7 @@ import java.util.Date;
 /**
  * 响应结果加密
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/3/23 12:54
  */
 @Slf4j

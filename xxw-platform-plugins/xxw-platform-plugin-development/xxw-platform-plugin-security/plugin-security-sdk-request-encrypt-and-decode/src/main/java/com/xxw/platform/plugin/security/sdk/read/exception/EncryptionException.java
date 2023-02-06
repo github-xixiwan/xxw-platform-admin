@@ -8,7 +8,7 @@ import com.xxw.platform.plugin.security.sdk.read.constants.EncryptionConstants;
 /**
  * 请求解密，响应加密 异常
  *
- * @author luojie
+ * @author liaoxiting
  * @date 2021/3/23 12:54
  */
 public class EncryptionException extends ServiceException {

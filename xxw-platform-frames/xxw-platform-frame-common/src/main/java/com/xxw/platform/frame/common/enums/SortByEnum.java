@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 数据库正序倒序排列的枚举
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/6/29 14:11
  */
 @Getter

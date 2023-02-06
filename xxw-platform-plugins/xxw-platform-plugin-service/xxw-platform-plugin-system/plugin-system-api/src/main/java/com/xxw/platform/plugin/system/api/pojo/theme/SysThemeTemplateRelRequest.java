@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 系统主题模板属性关系参数
  *
- * @author xixiaowei
+ * @author liaoxiting
  * @date 2021/12/24 10:42
  */
 @EqualsAndHashCode(callSuper = true)

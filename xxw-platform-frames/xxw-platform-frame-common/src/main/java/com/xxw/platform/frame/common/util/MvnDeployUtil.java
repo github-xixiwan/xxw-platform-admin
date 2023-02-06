@@ -17,7 +17,7 @@ import java.util.List;
  * 1. 批量上传指定目录下所有jar到私服
  * 2. 批量上传指定目录下所有jar到本地仓库
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/9/30 21:31
  */
 @Getter
@@ -79,7 +79,7 @@ public class MvnDeployUtil {
     /**
      * 探测pom文件的内容，是否packaging为pom类型
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:45
      */
     public static boolean packagingIsPomFlag(File pom) {
@@ -103,7 +103,7 @@ public class MvnDeployUtil {
     /**
      * 递归获取一个目录下的所有文件目录路径
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:49
      */
     private void getAllDirs(String fileDir) {
@@ -128,7 +128,7 @@ public class MvnDeployUtil {
     /**
      * 获取目录的类型，判断目录下是否同时有pom和jar文件，或者单纯有pom文件
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:49
      */
     private DirectoryType getDirectoryType(File directoryPath) {
@@ -160,7 +160,7 @@ public class MvnDeployUtil {
     /**
      * 对只有pom文件的目录，执行mvn deploy操作
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:55
      */
     private void doOnlyPom(File directory) {
@@ -185,7 +185,7 @@ public class MvnDeployUtil {
     /**
      * 对同时包含jar和pom文件的目录，执行mvn deploy操作
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:58
      */
     private void doJarAndPom(File directory) {
@@ -214,7 +214,7 @@ public class MvnDeployUtil {
     /**
      * 程序入口
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:58
      */
     public void beginDeploy() {
@@ -238,7 +238,7 @@ public class MvnDeployUtil {
     /**
      * 执行真正的mvn命令
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:54
      */
     private void executeCommand(String command) {
@@ -254,7 +254,7 @@ public class MvnDeployUtil {
     /**
      * 构造mvn deploy command命令
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:52
      */
     private String buildCommand(FileType fileType, File deployJar, File deployJarPom) {
@@ -303,7 +303,7 @@ public class MvnDeployUtil {
      * <p>
      * 判断目录下是否有可以上传的jar
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:33
      */
     private enum DirectoryType {
@@ -326,7 +326,7 @@ public class MvnDeployUtil {
     /**
      * 可以被mvn上传的文件类型
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/9/30 21:34
      */
     private enum FileType {

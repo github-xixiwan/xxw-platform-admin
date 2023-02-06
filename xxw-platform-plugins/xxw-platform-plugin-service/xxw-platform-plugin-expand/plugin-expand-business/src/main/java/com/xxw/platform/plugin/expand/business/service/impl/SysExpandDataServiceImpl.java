@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * 业务拓展-具体数据业务实现层
  *
- * @author fengshuonan
+ * @author liaoxiting
  * @date 2022/03/29 23:47
  */
 @Service
@@ -104,7 +104,7 @@ public class SysExpandDataServiceImpl extends ServiceImpl<SysExpandDataMapper, S
     /**
      * 获取信息
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     private SysExpandData querySysExpandData(SysExpandDataRequest sysExpandDataRequest) {
@@ -118,7 +118,7 @@ public class SysExpandDataServiceImpl extends ServiceImpl<SysExpandDataMapper, S
     /**
      * 创建查询wrapper
      *
-     * @author fengshuonan
+     * @author liaoxiting
      * @date 2022/03/29 23:47
      */
     private LambdaQueryWrapper<SysExpandData> createWrapper(SysExpandDataRequest sysExpandDataRequest) {
