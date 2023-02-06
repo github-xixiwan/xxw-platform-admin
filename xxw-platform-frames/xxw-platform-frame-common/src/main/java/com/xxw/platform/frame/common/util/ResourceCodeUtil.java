@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 /**
  * 资源缓存前缀标识替换工具
  * <p>
- * Guns资源编码为固定的guns$开头，如果项目编码修改后，应将资源标识前缀进行修改
+ * Xxw资源编码为固定的xxw$开头，如果项目编码修改后，应将资源标识前缀进行修改
  *
  * @author liaoxiting
  * @date 2022/11/16 23:07
@@ -13,14 +13,14 @@ import cn.hutool.core.util.StrUtil;
 public class ResourceCodeUtil {
 
     /**
-     * Guns默认的资源前缀标识
+     * Xxw默认的资源前缀标识
      */
-    public static final String GUNS_RES_PREFIX = "guns\\$";
+    public static final String XXW_RES_PREFIX = "xxw\\$";
 
     /**
      * 将参数的资源编码，改为携带新的应用编码的资源编码
      * <p>
-     * 例如之前是：guns$sys_notice$add
+     * 例如之前是：xxw$sys_notice$add
      * <p>
      * 修改之后为：{newAppCode参数}$sys_notice$add
      *
@@ -42,7 +42,7 @@ public class ResourceCodeUtil {
             return resourceCode;
         }
 
-        return resourceCode.replaceFirst(GUNS_RES_PREFIX, newPrefix);
+        return resourceCode.replaceFirst(XXW_RES_PREFIX, newPrefix);
     }
 
 }

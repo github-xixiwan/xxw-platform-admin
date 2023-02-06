@@ -27,7 +27,7 @@ public class ThemeConfigRefresh implements ConfigInitCallbackApi {
 
     @Override
     public void initAfter() {
-        themeCacheApi.remove(SystemConstants.THEME_GUNS_PLATFORM);
+        themeCacheApi.remove(SystemConstants.THEME_XXW_PLATFORM);
     }
 
 }

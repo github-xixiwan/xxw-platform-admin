@@ -29,13 +29,13 @@ public class DefaultThemeFactory {
      */
     public static DefaultTheme getSystemDefaultTheme() {
         DefaultTheme defaultTheme = new DefaultTheme();
-        defaultTheme.setGunsMgrBeiUrl("https://beian.miit.gov.cn/");
-        defaultTheme.setGunsMgrBeiNo("京ICP备001-1");
-        defaultTheme.setGunsMgrFavicon("1479753047148322818");
-        defaultTheme.setGunsMgrFooterText("xixiwan-platform开源技术");
-        defaultTheme.setGunsMgrLogo("1479753047148322818");
-        defaultTheme.setGunsMgrName("xixiwan-platform");
-        defaultTheme.setGunsMgrLoginBackgroundImg("1479751422149074948");
+        defaultTheme.setXxwMgrBeiUrl("https://beian.miit.gov.cn/");
+        defaultTheme.setXxwMgrBeiNo("京ICP备001-1");
+        defaultTheme.setXxwMgrFavicon("1479753047148322818");
+        defaultTheme.setXxwMgrFooterText("xixiwan-platform开源技术");
+        defaultTheme.setXxwMgrLogo("1479753047148322818");
+        defaultTheme.setXxwMgrName("xixiwan-platform");
+        defaultTheme.setXxwMgrLoginBackgroundImg("1479751422149074948");
         return defaultTheme;
     }
 

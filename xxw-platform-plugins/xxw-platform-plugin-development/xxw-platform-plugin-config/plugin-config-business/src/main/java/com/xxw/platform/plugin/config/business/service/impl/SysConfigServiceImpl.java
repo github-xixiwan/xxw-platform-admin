@@ -216,7 +216,7 @@ public class SysConfigServiceImpl extends ServiceImpl<SysConfigMapper, SysConfig
 
         InitConfigResponse initConfigResponse = new InitConfigResponse();
         initConfigResponse.setTitle("首次运行参数生成");
-        initConfigResponse.setDescription("第一次进入Guns系统会配置系统的一些秘钥和部署的url信息，这些秘钥均为随机生成，以确保系统的安全性");
+        initConfigResponse.setDescription("第一次进入Xxw系统会配置系统的一些秘钥和部署的url信息，这些秘钥均为随机生成，以确保系统的安全性");
 
         // 获取所有参数分组下的配置信息
         List<InitConfigGroup> configGroupList = new ArrayList<>();

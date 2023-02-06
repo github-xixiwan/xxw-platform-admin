@@ -31,7 +31,7 @@ public interface SystemConstants {
     /**
      * 默认的系统的名称
      */
-    String DEFAULT_SYSTEM_NAME = "Guns快速开发平台";
+    String DEFAULT_SYSTEM_NAME = "Xxw快速开发平台";
 
     /**
      * 超级管理员的角色编码
@@ -46,12 +46,12 @@ public interface SystemConstants {
     /**
      * 主题编码相关的系统变量前缀
      */
-    String THEME_CODE_SYSTEM_PREFIX = "GUNS";
+    String THEME_CODE_SYSTEM_PREFIX = "XXW";
 
     /**
      * 系统内置主题模板的编码
      */
-    String THEME_GUNS_PLATFORM = "GUNS_PLATFORM";
+    String THEME_XXW_PLATFORM = "XXW_PLATFORM";
 
     /**
      * 默认OAuth2用户组织机构id

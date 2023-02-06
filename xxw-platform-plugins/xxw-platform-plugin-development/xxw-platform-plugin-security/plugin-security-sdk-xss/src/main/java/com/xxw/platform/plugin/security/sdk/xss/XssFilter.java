@@ -17,7 +17,7 @@ import java.io.IOException;
  */
 public class XssFilter implements Filter {
 
-    public static final String FILTER_NAME = "GUNS_XSS_FILTER";
+    public static final String FILTER_NAME = "XXW_XSS_FILTER";
 
     private final XssProperties xssProperties;
 

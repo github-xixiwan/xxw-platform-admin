@@ -91,7 +91,7 @@ public interface SysResourceService extends IService<SysResource> {
     void deleteResourceByProjectCode(String projectCode);
 
     /**
-     * 更新资源编码前缀，将guns$前缀改为新的
+     * 更新资源编码前缀，将xxw$前缀改为新的
      *
      * @author liaoxiting
      * @date 2022/11/17 0:17

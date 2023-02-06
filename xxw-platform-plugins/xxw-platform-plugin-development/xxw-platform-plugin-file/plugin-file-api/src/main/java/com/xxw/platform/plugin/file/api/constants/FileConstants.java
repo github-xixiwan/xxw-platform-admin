@@ -44,7 +44,7 @@ public interface FileConstants {
     String FILE_PRIVATE_PREVIEW_URL = "/sysFileInfo/private/preview";
 
     /**
-     * Guns中公共文件预览的接口（不用带token，一般用在首页背景，首页banner等地方）
+     * Xxw中公共文件预览的接口（不用带token，一般用在首页背景，首页banner等地方）
      */
     String FILE_PUBLIC_PREVIEW_URL = "/sysFileInfo/public/preview";
 

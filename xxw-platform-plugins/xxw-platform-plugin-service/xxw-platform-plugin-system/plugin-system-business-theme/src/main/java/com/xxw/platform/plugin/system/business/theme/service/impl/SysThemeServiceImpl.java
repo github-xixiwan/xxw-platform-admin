@@ -235,7 +235,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
     public DefaultTheme currentThemeInfo(SysThemeRequest sysThemeParam) {
 
         // 获取缓存中是否有默认主题
-        DefaultTheme defaultTheme = themeCacheApi.get(SystemConstants.THEME_GUNS_PLATFORM);
+        DefaultTheme defaultTheme = themeCacheApi.get(SystemConstants.THEME_XXW_PLATFORM);
         if (defaultTheme != null) {
             return defaultTheme;
         }
@@ -247,7 +247,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
         this.parseFileUrls(result);
 
         // 缓存系统中激活的主题
-        themeCacheApi.put(SystemConstants.THEME_GUNS_PLATFORM, result);
+        themeCacheApi.put(SystemConstants.THEME_XXW_PLATFORM, result);
 
         return result;
     }
@@ -281,7 +281,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
      * @date 2022/1/11 9:44
      */
     private DefaultTheme querySystemTheme() {
-        // 查询编码为GUNS_PLATFORM的主题模板id
+        // 查询编码为XXW_PLATFORM的主题模板id
         Long defaultTemplateId = getDefaultTemplateId();
         if (defaultTemplateId == null) {
             return DefaultThemeFactory.getSystemDefaultTheme();
@@ -294,7 +294,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
         sysThemeLambdaQueryWrapper.orderByDesc(BaseEntity::getCreateTime);
         SysTheme sysTheme = this.getOne(sysThemeLambdaQueryWrapper, false);
         if (sysTheme == null) {
-            log.error("当前系统主题模板编码为GUNS_PLATFORM的主题不存在，请检查数据库数据是否正常！");
+            log.error("当前系统主题模板编码为XXW_PLATFORM的主题不存在，请检查数据库数据是否正常！");
             return DefaultThemeFactory.getSystemDefaultTheme();
         }
 
@@ -315,7 +315,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
      * @date 2022/1/11 11:12
      */
     private DefaultTheme parseFileUrls(DefaultTheme theme) {
-        // 查询编码为GUNS_PLATFORM的主题模板id
+        // 查询编码为XXW_PLATFORM的主题模板id
         Long defaultTemplateId = getDefaultTemplateId();
         if (defaultTemplateId == null) {
             return theme;
@@ -387,12 +387,12 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
      * @date 2022/1/11 11:35
      */
     private Long getDefaultTemplateId() {
-        // 查询编码为GUNS_PLATFORM的主题模板id
+        // 查询编码为XXW_PLATFORM的主题模板id
         LambdaQueryWrapper<SysThemeTemplate> sysThemeTemplateLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        sysThemeTemplateLambdaQueryWrapper.eq(SysThemeTemplate::getTemplateCode, SystemConstants.THEME_GUNS_PLATFORM);
+        sysThemeTemplateLambdaQueryWrapper.eq(SysThemeTemplate::getTemplateCode, SystemConstants.THEME_XXW_PLATFORM);
         SysThemeTemplate sysThemeTemplate = this.sysThemeTemplateService.getOne(sysThemeTemplateLambdaQueryWrapper, false);
         if (sysThemeTemplate == null) {
-            log.error("当前系统主题模板编码GUNS_PLATFORM不存在，请检查数据库数据是否正常！");
+            log.error("当前系统主题模板编码XXW_PLATFORM不存在，请检查数据库数据是否正常！");
             return null;
         }
         return sysThemeTemplate.getTemplateId();
@@ -405,7 +405,7 @@ public class SysThemeServiceImpl extends ServiceImpl<SysThemeMapper, SysTheme> i
      * @date 2022/1/12 12:49
      */
     private void clearThemeCache() {
-        themeCacheApi.remove(SystemConstants.THEME_GUNS_PLATFORM);
+        themeCacheApi.remove(SystemConstants.THEME_XXW_PLATFORM);
     }
 
 }

@@ -24,8 +24,8 @@ public class ErrorStaticJsonView implements View {
         }
 
         // 如果是运维平台404，Redirect到首页
-        if (model.get("path") != null && String.valueOf(model.get("path")).startsWith("/guns-devops")) {
-            response.sendRedirect("/guns-devops");
+        if (model.get("path") != null && String.valueOf(model.get("path")).startsWith("/xxw-devops")) {
+            response.sendRedirect("/xxw-devops");
         } else {
             ErrorResponseData<Object> errorResponseData = new ErrorResponseData<>("404", "请求资源不存在");
             ResponseRenderUtil.renderJsonResponse(response, errorResponseData);

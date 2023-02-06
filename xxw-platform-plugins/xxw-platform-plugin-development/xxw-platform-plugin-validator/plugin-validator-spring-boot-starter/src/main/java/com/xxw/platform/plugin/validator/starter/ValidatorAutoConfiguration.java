@@ -22,7 +22,7 @@ public class ValidatorAutoConfiguration {
      * @date 2020/8/12 20:18
      */
     @Bean
-    public XxwPlatformValidator gunsValidator() {
+    public XxwPlatformValidator xxwValidator() {
         return new XxwPlatformValidator();
     }
 
