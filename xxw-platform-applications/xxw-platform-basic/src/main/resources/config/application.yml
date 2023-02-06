@@ -46,7 +46,7 @@ sso:
   openFlag: false
   sso-client-type: server
 mybatis-plus:
-  mapper-locations: classpath*:com/xxw/platform/**/mapping/*.xml
+#  mapper-locations: classpath*:com/xxw/platform/**/mapping/*.xml
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
