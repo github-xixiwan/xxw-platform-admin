@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xxw.platform</groupId>
-    <artifactId>xxw-platform</artifactId>
+    <artifactId>xxw-platform-admin</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
-    <url>https://github.com/github-xixiwan/xxw-platform</url>
-    <name>xxw-platform</name>
-    <description>xxw-platform</description>
+    <url>https://github.com/github-xixiwan/xxw-platform-admin</url>
+    <name>xxw-platform-admin</name>
+    <description>xxw-platform-admin</description>
 
     <licenses>
         <license>
@@ -20,12 +20,12 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/github-xixiwan/xxw-platform</url>
+        <url>https://github.com/github-xixiwan/xxw-platform-admin</url>
         <connection>
-            scm:git@github.com:github-xixiwan/xxw-platform.git
+            scm:git@github.com:github-xixiwan/xxw-platform-admin.git
         </connection>
         <developerConnection>
-            scm:git@github.com:github-xixiwan/xxw-platform.git
+            scm:git@github.com:github-xixiwan/xxw-platform-admin.git
         </developerConnection>
         <tag>HEAD</tag>
     </scm>

@@ -8,7 +8,7 @@
 
     <parent>
         <groupId>com.xxw.platform</groupId>
-        <artifactId>xxw-platform</artifactId>
+        <artifactId>xxw-platform-admin</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
